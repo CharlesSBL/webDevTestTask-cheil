@@ -1,7 +1,5 @@
 # Product JSON Map
 
-This document outlines the structure of the product JSON object used in the dataset.
-
 ### General Information
 
 | Field Name | Data Type | Description |
@@ -13,7 +11,7 @@ This document outlines the structure of the product JSON object used in the data
 | `type` | `string` | The general type of product (e.g., "Pralka"). |
 | `line` | `string` | The specific product line (e.g., "QuickDrive™"). |
 | `color` | `string` | The color of the product. |
-| `full_name`| `string` | A composed display name from other fields: (`name`, `type`, `line`, `capacity`, `color`). |
+| `full_name`| `string` | A composed display name from other fields: (`name`, `type`, `line`, `weight`, `color`). |
 
 ### Physical Attributes
 
