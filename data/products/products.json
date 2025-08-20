@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "popularity": 6,
+        "image": "washer_1.webp",
+        "name": "WW90T754ABT",
+        "type": "Pralka",
+        "line": "QuickDrive™",
+        "color": "biala",
+        "full_name": "WW90T754ABT, Pralka QuickDrive™, 9 kg, biala",
+        "capacity": {
+            "amount": 9.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyswietlacz elektroniczny"
+        ],
+        "energy_class": "A",
+        "price": 3199.00,
+        "currency": "zl",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": 53.31,
+            "rate": 60
+        }
+    },
+    {
+        "id": 2,
+        "popularity": 5,
+        "image": "washer_2.webp",
+        "name": "WW10T654DLH",
+        "type": "Pralka",
+        "line": "EcoBubble",
+        "color": "biala",
+        "full_name": "WW10T654DLH, Pralka EcoBubble™, 10.5 kg, biala",
+        "capacity": {
+            "amount": 10.5,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyswietlacz elektroniczny"
+        ],
+        "energy_class": "B",
+        "price": 3199.00,
+        "currency": "zl",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": 53.31,
+            "rate": 60
+        }
+    }
+]
