@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "popularity": 6,
+        "name": "WW90T754ABT",
+        "type": "Pralka",
+        "line": "QuickDrive™",
+        "color": "biała",
+        "full_name": "WW90T754ABT, Pralka QuickDrive™, 9 kg, biała",
+        "capacity": {
+            "amount": 9,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "A",
+        "price": 3199.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": 53.31,
+            "rate": 60
+        }
+    }
+]
