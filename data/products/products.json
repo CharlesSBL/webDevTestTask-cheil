@@ -162,5 +162,46 @@
             "monthly_fee": null,
             "rate": null
         }
+    },
+    {
+        "id": 5,
+        "popularity": 2,
+        "image": "washer_5.webp",
+        "name": "WW10T654DLH",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała",
+        "weight": {
+            "amount": 10.5,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 9.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "E",
+        "price": 3199.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": null,
+            "rate": null
+        }
     }
 ]
