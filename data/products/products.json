@@ -6,8 +6,12 @@
         "name": "WW90T754ABT",
         "type": "Pralka",
         "line": "QuickDrive™",
-        "color": "biala",
-        "full_name": "WW90T754ABT, Pralka QuickDrive™, 9 kg, biala",
+        "color": "biała",
+        "full_name": "WW90T754ABT, Pralka QuickDrive™, 9 kg, biała",
+        "weight": {
+            "amount": 9.0,
+            "measure": "kg"
+        },
         "capacity": {
             "amount": 9.0,
             "measure": "kg"
@@ -22,11 +26,11 @@
             "Drzwi AddWash™",
             "Panel AI Control",
             "Silnik inwerterowy",
-            "Wyswietlacz elektroniczny"
+            "Wyświetlacz elektroniczny"
         ],
         "energy_class": "A",
         "price": 3199.00,
-        "currency": "zl",
+        "currency": "zł",
         "price_expiration_date": {
             "from": "2022-09-15",
             "to": "2022-09-21"
@@ -42,9 +46,13 @@
         "image": "washer_2.webp",
         "name": "WW10T654DLH",
         "type": "Pralka",
-        "line": "EcoBubble",
-        "color": "biala",
-        "full_name": "WW10T654DLH, Pralka EcoBubble™, 10.5 kg, biala",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała",
+        "weight": {
+            "amount": 10.5,
+            "measure": "kg"
+        },
         "capacity": {
             "amount": 10.5,
             "measure": "kg"
@@ -59,11 +67,52 @@
             "Drzwi AddWash™",
             "Panel AI Control",
             "Silnik inwerterowy",
-            "Wyswietlacz elektroniczny"
+            "Wyświetlacz elektroniczny"
         ],
         "energy_class": "B",
         "price": 3199.00,
-        "currency": "zl",
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": 53.31,
+            "rate": 60
+        }
+    },
+    {
+        "id": 3,
+        "popularity": 4,
+        "image": "washer_3.webp",
+        "name": "WW90T654DLH",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "WW90T654DLH, Pralka EcoBubble™, 9 kg, biała",
+        "weight": {
+            "amount": 9.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "C",
+        "price": 3199.00,
+        "currency": "zł",
         "price_expiration_date": {
             "from": "2022-09-15",
             "to": "2022-09-21"
