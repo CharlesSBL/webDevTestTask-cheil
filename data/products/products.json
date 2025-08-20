@@ -244,5 +244,87 @@
             "monthly_fee": null,
             "rate": null
         }
+    },
+    {
+        "id": 6,
+        "popularity": 7,
+        "image": "washer_2.webp",
+        "name": "WW20T654DLH",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "WW20T654DLH, Pralka EcoBubble™, 8 kg, biała",
+        "weight": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "F",
+        "price": 3199.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": null,
+            "rate": null
+        }
+    },
+    {
+        "id": 8,
+        "popularity": 8,
+        "image": "washer_4.webp",
+        "name": "MMM0T654CVH",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "MMM0T654CVH, Pralka EcoBubble™, 8 kg, biała",
+        "weight": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "F",
+        "price": 3199.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": null,
+            "rate": null
+        }
     }
 ]
