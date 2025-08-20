@@ -203,5 +203,46 @@
             "monthly_fee": null,
             "rate": null
         }
+    },
+    {
+        "id": 6,
+        "popularity": 1,
+        "image": "washer_6.webp",
+        "name": "WW90T654DLH",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "WW90T654DLH, Pralka EcoBubble™, 8 kg, biała",
+        "weight": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Panel AI Control",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "F",
+        "price": 3199.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2022-09-15",
+            "to": "2022-09-21"
+        },
+        "installments": {
+            "monthly_fee": null,
+            "rate": null
+        }
     }
 ]
