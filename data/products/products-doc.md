@@ -1,40 +1,47 @@
-# Product json map
-<field: data-Type,  - description>
+# Product JSON Map
 
-{
-id:                 integer,        - id of product record 
-popularity:         integer,        - popularity of product
+This document outlines the structure of the product JSON object used in the dataset.
 
-full_name:          string,         - the compose of fields: 
-                                        (name, type+line, weight, color)
+### General Information
 
-name:               string,         - name of product 
-type:               string,         - type of product 
-line:               string,         - specific product line
-color:              string,         - color of product
-image:              string,         - webp image of the product
+| Field Name | Data Type | Description |
+| :--- | :--- | :--- |
+| `id` | `integer` | Unique ID of the product record. |
+| `popularity` | `integer` | Popularity score of the product. |
+| `image` | `string` | Filename of the product's WebP image. |
+| `name` | `string` | The model name of the product. |
+| `type` | `string` | The general type of product (e.g., "Pralka"). |
+| `line` | `string` | The specific product line (e.g., "QuickDrive™"). |
+| `color` | `string` | The color of the product. |
+| `full_name`| `string` | A composed display name from other fields: (`name`, `type`, `line`, `capacity`, `color`). |
 
+### Physical Attributes
 
-weight_amount:      float           - weight of the product
-weight_measure:     string          - measure of the product
-capacity_amount:    float,          - capacity value
-capacity_measure:   integer,        - metric system of capacity
+| Field Name | Data Type | Description |
+| :--- | :--- | :--- |
+| `weight.amount` | `float` | The physical weight of the product appliance. |
+| `weight.measure` | `string` | The unit of measure for the product's weight (e.g., "kg"). |
+| `capacity.amount`| `float` | The load capacity value of the product. |
+| `capacity.measure`| `string` | The unit of measure for capacity (e.g., "kg"). |
+| `dimensions.G` | `integer` | The depth of the product. |
+| `dimensions.S` | `integer` | The width of the product. |
+| `dimensions.W` | `integer` | The height of the product. |
+| `dimensions.measure` | `string` | The unit of measure for dimensions (e.g., "cm"). |
 
-dimensions_G:       integer,        - depth of product 
-dimensions_S:       integer,        - width of product 
-dimensions_W:       integer,        - height of product 
-dimensions_measure: string,         - metric system of dimensions
-        
+### Features & Specifications
 
-functionality:              string[],       - features of product 
-energy_class:               string,         - energy class of product
-        
-price:                      float,          - price of product
-currency:                   string,         - currency of the price
-        
-price_expiration_date_from: string,         - start date of price in YYYY-MM-DD format
-price_expiration_date_to:   string,         - end date of price in YYYY-MM-DD format
+| Field Name | Data Type | Description |
+| :--- | :--- | :--- |
+| `functionality` | `string[]` | An array of strings describing product features. |
+| `energy_class` | `string` | The energy efficiency class of the product (e.g., "A"). |
 
-installments_monthly_fee:   float,          - how much pay per month 
-installments_rate:          integer,        - amount of installments
-}
+### Pricing Information
+
+| Field Name | Data Type | Description |
+| :--- | :--- | :--- |
+| `price` | `float` | The price of the product. |
+| `currency` | `string` | The currency of the price (e.g., "zł"). |
+| `price_expiration_date.from` | `string` | The start date of the promotional price in `YYYY-MM-DD` format. |
+| `price_expiration_date.to` | `string` | The end date of the promotional price in `YYYY-MM-DD` format. |
+| `installments.monthly_fee` | `float` \| `null` | The monthly payment amount for an installment plan. |
+| `installments.rate` | `integer` \| `null` | The total number of installments. |
