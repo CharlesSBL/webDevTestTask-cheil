@@ -373,7 +373,6 @@ createRoot(document.getElementById('root')!).render(
     <footer>
       <div className='card-expand'>
         <a href="">Pokaż więcej</a>
-        <img src="/img/triangle.svg" alt="arrow" />
       </div>
     </footer>
   </StrictMode>

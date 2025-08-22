@@ -10,7 +10,8 @@ $bx-shadow-sm: 0rem 0.25rem 0.5rem rgb(236, 236, 236);
 $bg-color: #F8F8F8;
 $white-c: rgb(255, 255, 255);
 $font-color-gray: #767676;
-$samsung-blue: #1428A0;
+$samsung-blue-dark: #1428A0;
+$samsung-blue: #007AFF;
 
 body {
     background-color: $bg-color;
@@ -73,11 +74,20 @@ body {
     margin-top: 0.25rem;
     margin-right: 5rem;
 
-    box-shadow: $bx-shadow-sm;
     border-radius: $bd-rad-sm;
     background-color: $white-c;
 }
 
+.search-input:hover,
+.search-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: $bx-shadow-sm;
+}
+
+
+
+// TODO: @media (max-width: 64.5rem)
 .filter-menu {
     display: flex;
     align-items: center;
@@ -121,9 +131,13 @@ body {
     padding-left: 0.75rem;
     margin-top: 0.5rem;
 
-    box-shadow: $bx-shadow-sm;
     border-radius: $bd-rad-sm;
     background-color: $white-c;
+}
+
+.option:hover {
+    box-shadow: $bx-shadow-sm;
+    cursor: pointer;
 }
 
 // arrow setup
@@ -141,8 +155,8 @@ body {
 
     background-image: url('/assets/images/arrow/arrow.svg');
 
-    height: 10px;
-    width: 13px;
+    height: 0.65rem;
+    width: 0.8rem;
 }
 
 // .selected {}
@@ -153,28 +167,24 @@ body {
 
 // .non-selected {}
 
-// =====================================
 
 .container-counter-out {}
 
 .container-counter-in {
     max-width: 63.5rem;
     width: 100%;
-    padding: 0.75rem;
+    padding: 0.8rem;
 }
 
 .product-counter {
     font-size: 0.85rem;
 }
 
-// =====================================
-
 .container-listing-out {
     width: 100%;
 }
 
 .container-listing-in {
-    // max-width: 63.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,6 +200,20 @@ body {
     row-gap: 1.25rem;
 }
 
+@media (max-width: 69rem) {
+    .card-grid {
+        grid-template-columns: repeat(2, 21rem);
+    }
+}
+
+@media (max-width: 46.25rem) {
+    .card-grid {
+        grid-template-columns: 21rem;
+    }
+}
+
+
+
 .card-item {
     display: flex;
     flex-direction: column;
@@ -202,13 +226,17 @@ body {
     border-radius: 1.5rem;
 
     background-color: $white-c;
+
+}
+
+.card-item:hover {
     box-shadow: $bx-shadow-sm;
 
 }
 
 .product-image {
     margin-top: 1.5rem;
-    width: 250px;
+    width: 15.5rem;
     height: 'auto';
 }
 
@@ -311,21 +339,48 @@ body {
 }
 
 .product-btn {
-    max-width: 10rem;
+    max-width: 9.25rem;
     width: 100%;
 
-    letter-spacing: 0.12rem;
+    letter-spacing: 0.15rem;
+    font-size: 0.85rem;
 
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.15rem;
     border-radius: 2rem;
 
-    background-color: $samsung-blue;
+    background-color: $samsung-blue-dark;
     color: $white-c;
     font-family: $font-bold;
+
+    text-transform: uppercase;
 }
 
 footer {
-    padding: 1rem;
+    padding: 1.25rem;
     text-align: center;
+    color: $samsung-blue;
+    font-family: $font-bold;
+}
+
+.card-expand a {
+    position: relative;
+    letter-spacing: 0.06rem;
+    padding-bottom: 3rem;
+}
+
+.card-expand a::after {
+    position: absolute;
+    content: '';
+
+    background-image: url('/assets/images/foot_arrow/foot_arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    top: 0.55rem;
+    left: 6.8rem;
+
+    height: 0.5rem;
+    width: 0.5rem;
 }
