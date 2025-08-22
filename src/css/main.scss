@@ -182,8 +182,6 @@ body {
 
 .product-listing {}
 
-
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 21rem);
@@ -221,18 +219,15 @@ body {
 
 
 .product-name {
-    margin-top: 0.5rem;
-
-    min-height: 3em;
+    min-height: 3.25rem;
     font-size: 1.12rem;
+
+    margin-top: 0.5rem;
 
     font-family: $font-bold;
 }
 
-
-
-
-.list-info {
+.product-info-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -241,22 +236,22 @@ body {
     margin-top: 2rem;
 }
 
-.item-info {
+.product-info-item {
     color: $font-color-gray;
     font-size: 0.80rem;
 }
 
-.info-value {
+.product-info-value {
     color: black;
     font-family: $font-bold;
 }
 
 .energy-info {
-    margin: 1rem 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 1rem 0;
 }
 
 .energy-value {
@@ -280,16 +275,13 @@ body {
 .product-price {
     display: flex;
     align-items: flex-start;
-
     margin-top: 0.25rem;
 }
 
 .price-value {
-    font-size: 2.5rem;
     line-height: 1;
+    font-size: 2.5rem;
     font-family: $font-bold;
-
-
 }
 
 .price-value-right {
@@ -319,22 +311,21 @@ body {
 }
 
 .product-btn {
+    max-width: 10rem;
+    width: 100%;
+
+    letter-spacing: 0.12rem;
 
     margin-top: 1rem;
-    // margin-bottom: 1.5;
-    background-color: $samsung-blue;
-    width: 100%;
-    max-width: 10rem;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    color: $white-c;
 
+    background-color: $samsung-blue;
+    color: $white-c;
     font-family: $font-bold;
-    letter-spacing: 0.12rem;
 }
 
 footer {
     padding: 1rem;
     text-align: center;
-
 }

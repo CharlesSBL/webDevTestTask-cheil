@@ -165,21 +165,21 @@ createRoot(document.getElementById('root')!).render(
               <img id='img-1' className='product-image' src={washerImage1} alt="washer machine" />
               <div className='card-body'>
                 <h3 id='prod-name-1' className='product-name'>WW90T754ABT, Pralka QuickDrive™, 9 kg, biała</h3>
-                <ul id='info-1' className='list-info'>
-                  <li className='item-info capacity-info'>
-                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>9</strong></p>
+                <ul id='info-1' className='product-info-list'>
+                  <li className='product-info-item capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>9</strong></p>
                   </li>
-                  <li className='item-info dimensions-info'>
-                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  <li className='product-info-item dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
                   </li>
-                  <li className='item-info functions-info'>
-                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy, Wyświetlacz elektroniczny</strong></p>
+                  <li className='product-info-item functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy, Wyświetlacz elektroniczny</strong></p>
                   </li>
-                  <li className='item-info energy-info'>
+                  <li className='product-info-item energy-info'>
                     <p className='info-name energy-name'>Klasa energetyczna</p>
                     <span className='energy-value'>A</span>
                   </li>
-                  <li className='item-info expiration-info'>
+                  <li className='product-info-item expiration-info'>
                     <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
                   </li>
                 </ul>
@@ -199,21 +199,21 @@ createRoot(document.getElementById('root')!).render(
               <img id='img-2' className='product-image' src={washerImage2} alt="washer machine" />
               <div className='card-body'>
                 <h3 id='prod-name-2' className='product-name'>WW80T554DAE, Pralka EcoBubble™, 8 kg, biała</h3>
-                <ul id='info-2' className='list-info'>
-                  <li className='item-info capacity-info'>
-                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>8</strong></p>
+                <ul id='info-2' className='product-info-list'>
+                  <li className='product-info-item capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>8</strong></p>
                   </li>
-                  <li className='item-info dimensions-info'>
-                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  <li className='product-info-item dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
                   </li>
-                  <li className='item-info functions-info'>
-                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>EcoBubble™, Panel AI Control, Silnik inwerterowy</strong></p>
+                  <li className='product-info-item functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>EcoBubble™, Panel AI Control, Silnik inwerterowy</strong></p>
                   </li>
-                  <li className='item-info energy-info'>
+                  <li className='product-info-item energy-info'>
                     <p className='info-name energy-name'>Klasa energetyczna</p>
                     <span className='energy-value'>B</span>
                   </li>
-                  <li className='item-info expiration-info'>
+                  <li className='product-info-item expiration-info'>
                     <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
                   </li>
                 </ul>
@@ -233,21 +233,21 @@ createRoot(document.getElementById('root')!).render(
               <img id='img-3' className='product-image' src={washerImage3} alt="washer machine" />
               <div className='card-body'>
                 <h3 id='prod-name-3' className='product-name'>WW10T654DLH, Pralka AddWash™, 10.5 kg, biała</h3>
-                <ul id='info-3' className='list-info'>
-                  <li className='item-info capacity-info'>
-                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>10.5</strong></p>
+                <ul id='info-3' className='product-info-list'>
+                  <li className='product-info-item capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>10.5</strong></p>
                   </li>
-                  <li className='item-info dimensions-info'>
-                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>60 x 60 x 85 cm</strong></p>
+                  <li className='product-info-item dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>60 x 60 x 85 cm</strong></p>
                   </li>
-                  <li className='item-info functions-info'>
-                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy</strong></p>
+                  <li className='product-info-item functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy</strong></p>
                   </li>
-                  <li className='item-info energy-info'>
+                  <li className='product-info-item energy-info'>
                     <p className='info-name energy-name'>Klasa energetyczna</p>
                     <span className='energy-value'>A</span>
                   </li>
-                  <li className='item-info expiration-info'>
+                  <li className='product-info-item expiration-info'>
                     <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
                   </li>
                 </ul>
@@ -267,21 +267,21 @@ createRoot(document.getElementById('root')!).render(
               <img id='img-4' className='product-image' src={washerImage1} alt="washer machine" />
               <div className='card-body'>
                 <h3 id='prod-name-4' className='product-name'>WW70T4040CE, Pralka, 7 kg, biała</h3>
-                <ul id='info-4' className='list-info'>
-                  <li className='item-info capacity-info'>
-                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>7</strong></p>
+                <ul id='info-4' className='product-info-list'>
+                  <li className='product-info-item capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>7</strong></p>
                   </li>
-                  <li className='item-info dimensions-info'>
-                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  <li className='product-info-item dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
                   </li>
-                  <li className='item-info functions-info'>
-                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Panel AI Control, Silnik inwerterowy</strong></p>
+                  <li className='product-info-item functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Panel AI Control, Silnik inwerterowy</strong></p>
                   </li>
-                  <li className='item-info energy-info'>
+                  <li className='product-info-item energy-info'>
                     <p className='info-name energy-name'>Klasa energetyczna</p>
                     <span className='energy-value'>C</span>
                   </li>
-                  <li className='item-info expiration-info'>
+                  <li className='product-info-item expiration-info'>
                     <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
                   </li>
                 </ul>
@@ -301,21 +301,21 @@ createRoot(document.getElementById('root')!).render(
               <img id='img-5' className='product-image' src={washerImage2} alt="washer machine" />
               <div className='card-body'>
                 <h3 id='prod-name-5' className='product-name'>WW90T534DAE, Pralka EcoBubble™, 9 kg, biała</h3>
-                <ul id='info-5' className='list-info'>
-                  <li className='item-info capacity-info'>
-                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>9</strong></p>
+                <ul id='info-5' className='product-info-list'>
+                  <li className='product-info-item capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>9</strong></p>
                   </li>
-                  <li className='item-info dimensions-info'>
-                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  <li className='product-info-item dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
                   </li>
-                  <li className='item-info functions-info'>
-                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>EcoBubble™, Panel AI Control</strong></p>
+                  <li className='product-info-item functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>EcoBubble™, Panel AI Control</strong></p>
                   </li>
-                  <li className='item-info energy-info'>
+                  <li className='product-info-item energy-info'>
                     <p className='info-name energy-name'>Klasa energetyczna</p>
                     <span className='energy-value'>B</span>
                   </li>
-                  <li className='item-info expiration-info'>
+                  <li className='product-info-item expiration-info'>
                     <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
                   </li>
                 </ul>
@@ -335,21 +335,21 @@ createRoot(document.getElementById('root')!).render(
               <img id='img-6' className='product-image' src={washerImage3} alt="washer machine" />
               <div className='card-body'>
                 <h3 id='prod-name-6' className='product-name'>WW80T304MBW, Pralka, 8 kg, biała</h3>
-                <ul id='info-6' className='list-info'>
-                  <li className='item-info capacity-info'>
-                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>8</strong></p>
+                <ul id='info-6' className='product-info-list'>
+                  <li className='product-info-item capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>8</strong></p>
                   </li>
-                  <li className='item-info dimensions-info'>
-                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  <li className='product-info-item dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
                   </li>
-                  <li className='item-info functions-info'>
-                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Silnik inwerterowy</strong></p>
+                  <li className='product-info-item functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Silnik inwerterowy</strong></p>
                   </li>
-                  <li className='item-info energy-info'>
+                  <li className='product-info-item energy-info'>
                     <p className='info-name energy-name'>Klasa energetyczna</p>
                     <span className='energy-value'>D</span>
                   </li>
-                  <li className='item-info expiration-info'>
+                  <li className='product-info-item expiration-info'>
                     <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
                   </li>
                 </ul>
