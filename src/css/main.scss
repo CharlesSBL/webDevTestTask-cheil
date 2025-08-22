@@ -16,6 +16,8 @@ body {
     letter-spacing: -1%;
 }
 
+
+// header
 .header-title {
     display: flex;
     align-items: center;
@@ -30,6 +32,7 @@ body {
     font-size: 2.5rem;
 }
 
+// container 
 .container-out {
     width: 100%;
     display: flex;
@@ -48,6 +51,7 @@ body {
     width: 100%;
 }
 
+// filter bar
 .filter-bar {
     display: flex;
     align-items: center;
@@ -58,6 +62,7 @@ body {
     gap: 1rem;
 }
 
+// input component
 .search-input {
     max-width: 15rem;
     width: 100%;
@@ -73,6 +78,7 @@ body {
     background-color: $white-c;
 }
 
+// menu component
 .filter-menu {
     display: flex;
     align-items: center;
@@ -85,25 +91,29 @@ body {
     margin-top: 0.75rem;
 }
 
+// item in menu list
 .filter-item {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
+// name of menu item
 .sort-by span {
     font-size: 1.10rem;
     font-family: $font-bold;
 }
 
-
-
+// item box
 .sort-by-options {
     font-size: 0.85rem;
     width: 100%;
 }
 
+// each item
 .sort-by-option {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,8 +129,8 @@ body {
     background-color: $white-c;
 }
 
+// arrow
 .sort-by-option img {
-    position: relative;
     visibility: hidden;
 }
 
@@ -129,8 +139,8 @@ body {
     position: absolute;
     visibility: visible;
 
-    top: 3.5px;
-    left: -12px;
+    top: 0.75rem;
+    left: 13.25rem;
 
     background-image: url('/assets/images/arrow/arrow.svg');
     height: 10px;
