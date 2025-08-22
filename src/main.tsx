@@ -143,213 +143,238 @@ createRoot(document.getElementById('root')!).render(
             </li>
           </ul>
 
+
         </div>
       </div>
     </section>
 
-    {/* <section className='container-out container-listing-out'>
+    <section className='container-out container-counter-out'>
+      <div className='container-in container-counter-in'>
+        <div className='product-counter'>
+          <p>Liczba wyników: 23</p>
+        </div>
+      </div>
+    </section>
+
+    <section className='container-out container-listing-out'>
       <div className='container-in container-listing-in'>
-        <div className='card-listing'>
-          <div className='product-counter'>
-            <p>Liczba wyników: 23</p>
-          </div>
+        <div className='product-listing'>
+
           <ul className='card-grid'>
             <li id='card-1' className='card-item'>
-              <img style={{ width: '300px', height: 'auto' }} id='img-1' className='product-image' src={washerImage1} alt="washer machine" />
-              <h3 id='prod-name-1' className='product-name'>WW90T754ABT, Pralka QuickDrive™, 9 kg, biała</h3>
-              <ul id='info-1' className='list-info'>
-                <li className='capacity-info'>
-                  <p className='capacity-name'>Pojemność (kg): <strong className='capacity-value'>9</strong></p>
-                </li>
-                <li className='dimensions-info'>
-                  <p className='dimensions-name'>Wymiary (GxSxW): <strong className='dimensions-value'>55 x 60 x 85 cm</strong></p>
-                </li>
-                <li className='functions-info'>
-                  <p className='functions-name'>Funkcje: <strong className='functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy, Wyświetlacz elektroniczny</strong></p>
-                </li>
-                <li className='energy-info'>
-                  <p className='energy-name'>Klasa energetyczna</p>
-                  <div className='arrow-box'>A</div>
-                </li>
-                <li className='expiration-info'>
-                  <p className='expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                </li>
-              </ul>
-              <div className='product-price'>
-                <h1 id='price-1' className='price-value'>3 199</h1>
-                <div className='price-value-right'>
-                  <p className='value-right-val'><strong>00</strong></p>
-                  <p className='value-right-currency'><strong>zł</strong></p>
+              <img id='img-1' className='product-image' src={washerImage1} alt="washer machine" />
+              <div className='card-body'>
+                <h3 id='prod-name-1' className='product-name'>WW90T754ABT, Pralka QuickDrive™, 9 kg, biała</h3>
+                <ul id='info-1' className='list-info'>
+                  <li className='item-info capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>9</strong></p>
+                  </li>
+                  <li className='item-info dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  </li>
+                  <li className='item-info functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy, Wyświetlacz elektroniczny</strong></p>
+                  </li>
+                  <li className='item-info energy-info'>
+                    <p className='info-name energy-name'>Klasa energetyczna</p>
+                    <span className='energy-value'>A</span>
+                  </li>
+                  <li className='item-info expiration-info'>
+                    <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
+                  </li>
+                </ul>
+                <div className='product-price'>
+                  <h1 id='price-1' className='price-value'>3 199</h1>
+                  <div className='price-value-right'>
+                    <p className='value-right-val'><strong>00</strong></p>
+                    <p className='value-right-currency'><strong>zł</strong></p>
+                  </div>
                 </div>
+                <p className='installments'>53,31 zł x 60 rat</p>
+
               </div>
-              <p className='installments'>53,31 zł x 60 rat</p>
               <button id='btn-1' className='product-btn'>wybierz</button>
             </li>
             <li id='card-2' className='card-item'>
-              <img style={{ width: '300px', height: 'auto' }} id='img-2' className='product-image' src={washerImage2} alt="dryer machine" />
-              <h3 id='prod-name-2' className='product-name'>DV90T6240AX, Suszarka pompowa, 9 kg, biała</h3>
-              <ul id='info-2' className='list-info'>
-                <li className='capacity-info'>
-                  <p className='capacity-name'>Pojemność (kg): <strong className='capacity-value'>9</strong></p>
-                </li>
-                <li className='dimensions-info'>
-                  <p className='dimensions-name'>Wymiary (GxSxW): <strong className='dimensions-value'>60 x 65 x 85 cm</strong></p>
-                </li>
-                <li className='functions-info'>
-                  <p className='functions-name'>Funkcje: <strong className='functions-value'>Technologia Heat Pump, Panel AI Control, Silnik inwerterowy, Wyświetlacz LED</strong></p>
-                </li>
-                <li className='energy-info'>
-                  <p className='energy-name'>Klasa energetyczna</p>
-                  <div className='arrow-box'>B</div>
-                </li>
-                <li className='expiration-info'>
-                  <p className='expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                </li>
-              </ul>
-              <div className='product-price'>
-                <h1 id='price-2' className='price-value'>3 499</h1>
-                <div className='price-value-right'>
-                  <p className='value-right-val'><strong>00</strong></p>
-                  <p className='value-right-currency'><strong>zł</strong></p>
+              <img id='img-2' className='product-image' src={washerImage2} alt="washer machine" />
+              <div className='card-body'>
+                <h3 id='prod-name-2' className='product-name'>WW80T554DAE, Pralka EcoBubble™, 8 kg, biała</h3>
+                <ul id='info-2' className='list-info'>
+                  <li className='item-info capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>8</strong></p>
+                  </li>
+                  <li className='item-info dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  </li>
+                  <li className='item-info functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>EcoBubble™, Panel AI Control, Silnik inwerterowy</strong></p>
+                  </li>
+                  <li className='item-info energy-info'>
+                    <p className='info-name energy-name'>Klasa energetyczna</p>
+                    <span className='energy-value'>B</span>
+                  </li>
+                  <li className='item-info expiration-info'>
+                    <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
+                  </li>
+                </ul>
+                <div className='product-price'>
+                  <h1 id='price-2' className='price-value'>2 799</h1>
+                  <div className='price-value-right'>
+                    <p className='value-right-val'><strong>00</strong></p>
+                    <p className='value-right-currency'><strong>zł</strong></p>
+                  </div>
                 </div>
+                <p className='installments'>46,65 zł x 60 rat</p>
+
               </div>
-              <p className='installments'>58,31 zł x 60 rat</p>
               <button id='btn-2' className='product-btn'>wybierz</button>
             </li>
             <li id='card-3' className='card-item'>
-              <img style={{ width: '300px', height: 'auto' }} id='img-3' className='product-image' src={washerImage3} alt="dishwasher" />
-              <h3 id='prod-name-3' className='product-name'>DW60M6040FS, Zmywarka, 14 kompletów, srebrna</h3>
-              <ul id='info-3' className='list-info'>
-                <li className='capacity-info'>
-                  <p className='capacity-name'>Pojemność (kompletów): <strong className='capacity-value'>14</strong></p>
-                </li>
-                <li className='dimensions-info'>
-                  <p className='dimensions-name'>Wymiary (GxSxW): <strong className='dimensions-value'>60 x 60 x 85 cm</strong></p>
-                </li>
-                <li className='functions-info'>
-                  <p className='functions-name'>Funkcje: <strong className='functions-value'>Technologia WaterWall, Silnik inwerterowy, Wyświetlacz LED, Programy szybkie</strong></p>
-                </li>
-                <li className='energy-info'>
-                  <p className='energy-name'>Klasa energetyczna</p>
-                  <div className='arrow-box'>A</div>
-                </li>
-                <li className='expiration-info'>
-                  <p className='expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                </li>
-              </ul>
-              <div className='product-price'>
-                <h1 id='price-3' className='price-value'>2 799</h1>
-                <div className='price-value-right'>
-                  <p className='value-right-val'><strong>00</strong></p>
-                  <p className='value-right-currency'><strong>zł</strong></p>
+              <img id='img-3' className='product-image' src={washerImage3} alt="washer machine" />
+              <div className='card-body'>
+                <h3 id='prod-name-3' className='product-name'>WW10T654DLH, Pralka AddWash™, 10.5 kg, biała</h3>
+                <ul id='info-3' className='list-info'>
+                  <li className='item-info capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>10.5</strong></p>
+                  </li>
+                  <li className='item-info dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>60 x 60 x 85 cm</strong></p>
+                  </li>
+                  <li className='item-info functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy</strong></p>
+                  </li>
+                  <li className='item-info energy-info'>
+                    <p className='info-name energy-name'>Klasa energetyczna</p>
+                    <span className='energy-value'>A</span>
+                  </li>
+                  <li className='item-info expiration-info'>
+                    <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
+                  </li>
+                </ul>
+                <div className='product-price'>
+                  <h1 id='price-3' className='price-value'>3 599</h1>
+                  <div className='price-value-right'>
+                    <p className='value-right-val'><strong>00</strong></p>
+                    <p className='value-right-currency'><strong>zł</strong></p>
+                  </div>
                 </div>
+                <p className='installments'>59,98 zł x 60 rat</p>
+
               </div>
-              <p className='installments'>46,65 zł x 60 rat</p>
               <button id='btn-3' className='product-btn'>wybierz</button>
             </li>
             <li id='card-4' className='card-item'>
-              <img style={{ width: '300px', height: 'auto' }} id='img-4' className='product-image' src={washerImage2} alt="fridge" />
-              <h3 id='prod-name-4' className='product-name'>RB37J5230SS, Lodówka No Frost, 362 l, srebrna</h3>
-              <ul id='info-4' className='list-info'>
-                <li className='capacity-info'>
-                  <p className='capacity-name'>Pojemność (l): <strong className='capacity-value'>362</strong></p>
-                </li>
-                <li className='dimensions-info'>
-                  <p className='dimensions-name'>Wymiary (GxSxW): <strong className='dimensions-value'>60 x 67 x 185 cm</strong></p>
-                </li>
-                <li className='functions-info'>
-                  <p className='functions-name'>Funkcje: <strong className='functions-value'>No Frost, Chłodzenie Multi Flow, Półki szklane, Oświetlenie LED</strong></p>
-                </li>
-                <li className='energy-info'>
-                  <p className='energy-name'>Klasa energetyczna</p>
-                  <div className='arrow-box'>A+</div>
-                </li>
-                <li className='expiration-info'>
-                  <p className='expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                </li>
-              </ul>
-              <div className='product-price'>
-                <h1 id='price-4' className='price-value'>2 999</h1>
-                <div className='price-value-right'>
-                  <p className='value-right-val'><strong>00</strong></p>
-                  <p className='value-right-currency'><strong>zł</strong></p>
+              <img id='img-4' className='product-image' src={washerImage1} alt="washer machine" />
+              <div className='card-body'>
+                <h3 id='prod-name-4' className='product-name'>WW70T4040CE, Pralka, 7 kg, biała</h3>
+                <ul id='info-4' className='list-info'>
+                  <li className='item-info capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>7</strong></p>
+                  </li>
+                  <li className='item-info dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  </li>
+                  <li className='item-info functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Panel AI Control, Silnik inwerterowy</strong></p>
+                  </li>
+                  <li className='item-info energy-info'>
+                    <p className='info-name energy-name'>Klasa energetyczna</p>
+                    <span className='energy-value'>C</span>
+                  </li>
+                  <li className='item-info expiration-info'>
+                    <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
+                  </li>
+                </ul>
+                <div className='product-price'>
+                  <h1 id='price-4' className='price-value'>2 199</h1>
+                  <div className='price-value-right'>
+                    <p className='value-right-val'><strong>00</strong></p>
+                    <p className='value-right-currency'><strong>zł</strong></p>
+                  </div>
                 </div>
+                <p className='installments'>36,65 zł x 60 rat</p>
+
               </div>
-              <p className='installments'>49,98 zł x 60 rat</p>
               <button id='btn-4' className='product-btn'>wybierz</button>
             </li>
             <li id='card-5' className='card-item'>
-              <img style={{ width: '300px', height: 'auto' }} id='img-5' className='product-image' src={washerImage3} alt="oven" />
-              <h3 id='prod-name-5' className='product-name'>NV75K5541RS, Piekarnik, 71 l, srebrny</h3>
-              <ul id='info-5' className='list-info'>
-                <li className='capacity-info'>
-                  <p className='capacity-name'>Pojemność (l): <strong className='capacity-value'>71</strong></p>
-                </li>
-                <li className='dimensions-info'>
-                  <p className='dimensions-name'>Wymiary (GxSxW): <strong className='dimensions-value'>60 x 55 x 60 cm</strong></p>
-                </li>
-                <li className='functions-info'>
-                  <p className='functions-name'>Funkcje: <strong className='functions-value'>Grill, Termoobieg, Oczyszczanie katalityczne, Wyświetlacz LED</strong></p>
-                </li>
-                <li className='energy-info'>
-                  <p className='energy-name'>Klasa energetyczna</p>
-                  <div className='arrow-box'>A</div>
-                </li>
-                <li className='expiration-info'>
-                  <p className='expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                </li>
-              </ul>
-              <div className='product-price'>
-                <h1 id='price-5' className='price-value'>2 499</h1>
-                <div className='price-value-right'>
-                  <p className='value-right-val'><strong>00</strong></p>
-                  <p className='value-right-currency'><strong>zł</strong></p>
+              <img id='img-5' className='product-image' src={washerImage2} alt="washer machine" />
+              <div className='card-body'>
+                <h3 id='prod-name-5' className='product-name'>WW90T534DAE, Pralka EcoBubble™, 9 kg, biała</h3>
+                <ul id='info-5' className='list-info'>
+                  <li className='item-info capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>9</strong></p>
+                  </li>
+                  <li className='item-info dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  </li>
+                  <li className='item-info functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>EcoBubble™, Panel AI Control</strong></p>
+                  </li>
+                  <li className='item-info energy-info'>
+                    <p className='info-name energy-name'>Klasa energetyczna</p>
+                    <span className='energy-value'>B</span>
+                  </li>
+                  <li className='item-info expiration-info'>
+                    <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
+                  </li>
+                </ul>
+                <div className='product-price'>
+                  <h1 id='price-5' className='price-value'>2 999</h1>
+                  <div className='price-value-right'>
+                    <p className='value-right-val'><strong>00</strong></p>
+                    <p className='value-right-currency'><strong>zł</strong></p>
+                  </div>
                 </div>
+                <p className='installments'>49,98 zł x 60 rat</p>
+
               </div>
-              <p className='installments'>41,65 zł x 60 rat</p>
               <button id='btn-5' className='product-btn'>wybierz</button>
             </li>
             <li id='card-6' className='card-item'>
-              <img style={{ width: '300px', height: 'auto' }} id='img-6' className='product-image' src={washerImage1} alt="microwave" />
-              <h3 id='prod-name-6' className='product-name'>MG23K3515AK, Mikrofala, 23 l, czarna</h3>
-              <ul id='info-6' className='list-info'>
-                <li className='capacity-info'>
-                  <p className='capacity-name'>Pojemność (l): <strong className='capacity-value'>23</strong></p>
-                </li>
-                <li className='dimensions-info'>
-                  <p className='dimensions-name'>Wymiary (GxSxW): <strong className='dimensions-value'>48 x 27 x 37 cm</strong></p>
-                </li>
-                <li className='functions-info'>
-                  <p className='functions-name'>Funkcje: <strong className='functions-value'>Grill, Moc 900W, Odszczelnianie pary, Wyświetlacz LED</strong></p>
-                </li>
-                <li className='energy-info'>
-                  <p className='energy-name'>Klasa energetyczna</p>
-                  <div className='arrow-box'>A</div>
-                </li>
-                <li className='expiration-info'>
-                  <p className='expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                </li>
-              </ul>
-              <div className='product-price'>
-                <h1 id='price-6' className='price-value'>699</h1>
-                <div className='price-value-right'>
-                  <p className='value-right-val'><strong>00</strong></p>
-                  <p className='value-right-currency'><strong>zł</strong></p>
+              <img id='img-6' className='product-image' src={washerImage3} alt="washer machine" />
+              <div className='card-body'>
+                <h3 id='prod-name-6' className='product-name'>WW80T304MBW, Pralka, 8 kg, biała</h3>
+                <ul id='info-6' className='list-info'>
+                  <li className='item-info capacity-info'>
+                    <p className='info-name capacity-name'>Pojemność (kg): <strong className='info-value capacity-value'>8</strong></p>
+                  </li>
+                  <li className='item-info dimensions-info'>
+                    <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
+                  </li>
+                  <li className='item-info functions-info'>
+                    <p className='info-name functions-name'>Funkcje: <strong className='info-value functions-value'>Silnik inwerterowy</strong></p>
+                  </li>
+                  <li className='item-info energy-info'>
+                    <p className='info-name energy-name'>Klasa energetyczna</p>
+                    <span className='energy-value'>D</span>
+                  </li>
+                  <li className='item-info expiration-info'>
+                    <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
+                  </li>
+                </ul>
+                <div className='product-price'>
+                  <h1 id='price-6' className='price-value'>1 899</h1>
+                  <div className='price-value-right'>
+                    <p className='value-right-val'><strong>00</strong></p>
+                    <p className='value-right-currency'><strong>zł</strong></p>
+                  </div>
                 </div>
+                <p className='installments'>31,65 zł x 60 rat</p>
+
               </div>
-              <p className='installments'>11,65 zł x 60 rat</p>
               <button id='btn-6' className='product-btn'>wybierz</button>
             </li>
           </ul>
         </div>
       </div>
-    </section> */}
+    </section>
 
-    {/* <footer>
+    <footer>
       <div className='card-expand'>
         <a href="">Pokaż więcej</a>
         <img src="/img/triangle.svg" alt="arrow" />
       </div>
-    </footer> */}
+    </footer>
   </StrictMode>
 )
