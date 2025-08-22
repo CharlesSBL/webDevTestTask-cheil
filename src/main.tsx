@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')!).render(
           <input className='search-input' placeholder='Search...' type="search" />
 
           <ul className='filter-menu'>
-            <li id='filter-1' className='filter-item filter-by'>
+            <li id='filter-1' className='menu-item filter-by'>
               <div className="menu-item-header">
                 <span>Sortuj po:</span>
               </div>
@@ -46,7 +46,7 @@ createRoot(document.getElementById('root')!).render(
               </div>
             </li>
 
-            <li id='filter-2' className='filter-item filter-function'>
+            <li id='filter-2' className='menu-item filter-function'>
               <div className="menu-item-header">
                 <span>Funkcje:</span>
               </div>
@@ -78,7 +78,7 @@ createRoot(document.getElementById('root')!).render(
               </div>
             </li>
 
-            <li id='filter-3' className='filter-item filter-energy'>
+            <li id='filter-3' className='menu-item filter-energy'>
               <div className="menu-item-header">
                 <span>Klasa energetyczna:</span>
               </div>
@@ -114,7 +114,7 @@ createRoot(document.getElementById('root')!).render(
               </div>
             </li>
 
-            <li id='filter-4' className='filter-item filter-capacity'>
+            <li id='filter-4' className='menu-item filter-capacity'>
               <div className="menu-item-header">
                 <span>Pojemność:</span>
               </div>
