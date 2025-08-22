@@ -16,23 +16,21 @@ body {
     letter-spacing: -1%;
 }
 
-
-// header
-.header-title {
+.section-header-title {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $white-c;
 }
 
-.title-name {
+.section-title-name {
     padding: 0.5rem 0;
     padding-bottom: 0.75rem;
     font-family: $font-bold;
     font-size: 2.5rem;
 }
 
-// container 
+
 .container-out {
     width: 100%;
     display: flex;
@@ -51,7 +49,7 @@ body {
     width: 100%;
 }
 
-// filter bar
+
 .filter-bar {
     display: flex;
     align-items: center;
@@ -62,7 +60,7 @@ body {
     gap: 1rem;
 }
 
-// input component
+
 .search-input {
     max-width: 15rem;
     width: 100%;
@@ -78,7 +76,6 @@ body {
     background-color: $white-c;
 }
 
-// menu component
 .filter-menu {
     display: flex;
     align-items: center;
@@ -91,27 +88,26 @@ body {
     margin-top: 0.75rem;
 }
 
-// item in menu list
+// menu list each item
 .filter-item {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-// name of menu item
-.sort-by span {
+// header name of menu item
+.menu-item-header span {
     font-size: 1.10rem;
     font-family: $font-bold;
 }
 
-// item box
-.sort-by-options {
+.options-box {
     font-size: 0.85rem;
     width: 100%;
 }
 
 // each item
-.sort-by-option {
+.option {
     position: relative;
 
     display: flex;
@@ -130,11 +126,11 @@ body {
 }
 
 // arrow
-.sort-by-option img {
+.option img {
     visibility: hidden;
 }
 
-.sort-by-option img::after {
+.option img::after {
     content: '';
     position: absolute;
     visibility: visible;
@@ -154,10 +150,7 @@ body {
 
 .selected-option span {}
 
-.non-selected {
-
-    // background-color: rgb(146, 192, 137);
-}
+.non-selected {}
 
 
 

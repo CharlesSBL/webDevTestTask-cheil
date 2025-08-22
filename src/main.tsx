@@ -10,8 +10,8 @@ import "./css/main.scss";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <header className='header-title'>
-      <h1 className='title-name'>Wybierz urządzenie</h1>
+    <header className='section-header-title'>
+      <h1 className='section-title-name'>Wybierz urządzenie</h1>
     </header>
 
     <section className='container-out container-filter-out'>
@@ -21,124 +21,124 @@ createRoot(document.getElementById('root')!).render(
 
           <ul className='filter-menu'>
             <li id='filter-1' className='filter-item filter-by'>
-              <div className="sort-by">
+              <div className="menu-item-header">
                 <span>Sortuj po:</span>
               </div>
 
-              <div className="sort-by-options">
+              <div className="options-box">
                 <div className='selected'>
-                  <div className="sort-by-option selected-option" data-value="popularność">
+                  <div className="option selected-option" data-value="popularność">
                     <span>Popularność</span>
                     <img src="" alt="arrow" />
                   </div>
                 </div>
 
                 {/* <div className='non-selected'>
-                  <div className="sort-by-option" data-value="cena">
+                  <div className="option" data-value="cena">
                     <span>Cena</span>
-                    <img src="./arrow.svg" alt="arrow" />
+                    <img src="" alt="arrow" />
                   </div>
-                  <div className="sort-by-option" data-value="pojemność">
+                  <div className="option" data-value="pojemność">
                     <span>Pojemność</span>
-                    <img src="./arrow.svg" alt="arrow" />
+                    <img src="" alt="arrow" />
                   </div>
                 </div> */}
               </div>
             </li>
 
             <li id='filter-2' className='filter-item filter-function'>
-              <div className="sort-by">
+              <div className="menu-item-header">
                 <span>Funkcje:</span>
               </div>
-              <div className="sort-by-options">
+              <div className="options-box">
                 <div className='selected'>
-                  <div className="sort-by-option selected-option" data-value="pokaż-wszystkie">
+                  <div className="option selected-option" data-value="pokaż-wszystkie">
                     <span>Pokaż wszystkie</span>
-                    <img src="./arrow.svg" alt="arrow" />
+                    <img src="" alt="arrow" />
                   </div>
                 </div>
                 {/* <div className='non-selected'>
-                <div className="sort-by-option" data-value="drzwi-addwash">
+                <div className="option" data-value="drzwi-addwash">
                 <span>Drzwi AddWash™</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="panel-ai-control">
+                <div className="option" data-value="panel-ai-control">
                 <span>Panel AI Control</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="silnik-inwerterowy">
+                <div className="option" data-value="silnik-inwerterowy">
                 <span>Silnik inwerterowy</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="wyświetlacz-elektroniczny">
+                <div className="option" data-value="wyświetlacz-elektroniczny">
                 <span>Wyświetlacz elektroniczny</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
               </div> */}
               </div>
             </li>
 
             <li id='filter-3' className='filter-item filter-energy'>
-              <div className="sort-by">
+              <div className="menu-item-header">
                 <span>Klasa energetyczna:</span>
               </div>
-              <div className="sort-by-options">
+              <div className="options-box">
                 <div className='selected'>
-                  <div className="sort-by-option selected-option" data-value="pokaż-wszystkie">
+                  <div className="option selected-option" data-value="pokaż-wszystkie">
                     <span>Pokaż wszystkie</span>
-                    <img src="./arrow.svg" alt="arrow" />
+                    <img src="" alt="arrow" />
                   </div>
                 </div>
                 {/* <div className='non-selected'>
-                <div className="sort-by-option" data-value="a">
+                <div className="option" data-value="a">
                 <span>A</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="b">
+                <div className="option" data-value="b">
                 <span>B</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="c">
+                <div className="option" data-value="c">
                 <span>C</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="d">
+                <div className="option" data-value="d">
                 <span>D</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
-                <div className="sort-by-option" data-value="f">
+                <div className="option" data-value="f">
                 <span>F</span>
-                <img src="./arrow.svg" alt="arrow" />
+                <img src="" alt="arrow" />
                 </div>
               </div> */}
               </div>
             </li>
 
             <li id='filter-4' className='filter-item filter-capacity'>
-              <div className="sort-by">
+              <div className="menu-item-header">
                 <span>Pojemność:</span>
               </div>
-              <div className="sort-by-options">
+              <div className="options-box">
                 <div className='selected'>
-                  <div className="sort-by-option selected-option" data-value="pokaż-wszystkie">
+                  <div className="option selected-option" data-value="pokaż-wszystkie">
                     <span>Pokaż wszystkie</span>
-                    <img src="./arrow.svg" alt="arrow" />
+                    <img src="" alt="arrow" />
                   </div>
                 </div>
                 {/* <div className='non-selected'>
-                <div className="sort-by-option" data-value="9kg">
-                <span>9kg</span>
-                <img src="./arrow.svg" alt="arrow" />
-                </div>
-                <div className="sort-by-option" data-value="8kg">
-                <span>8kg</span>
-                <img src="./arrow.svg" alt="arrow" />
-                </div>
-                <div className="sort-by-option" data-value="10.5kg">
-                <span>10.5kg</span>
-                <img src="./arrow.svg" alt="arrow" />
-                </div>
-              </div> */}
+                  <div className="option" data-value="9kg">
+                    <span>9kg</span>
+                    <img src="" alt="arrow" />
+                  </div>
+                  <div className="option" data-value="8kg">
+                    <span>8kg</span>
+                    <img src="" alt="arrow" />
+                  </div>
+                  <div className="option" data-value="10.5kg">
+                    <span>10.5kg</span>
+                    <img src="" alt="arrow" />
+                  </div>
+                </div> */}
               </div>
             </li>
           </ul>
