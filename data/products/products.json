@@ -2,7 +2,7 @@
     {
         "id": 1,
         "popularity": 6,
-        "image": "washer_1.webp",
+        "image": "washer-1.png",
         "name": "WW90T754ABT",
         "type": "Pralka",
         "line": "QuickDrive™",
@@ -43,7 +43,7 @@
     {
         "id": 2,
         "popularity": 5,
-        "image": "washer_2.webp",
+        "image": "washer-2.png",
         "name": "WW10T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -84,7 +84,7 @@
     {
         "id": 3,
         "popularity": 4,
-        "image": "washer_3.webp",
+        "image": "washer-3.png",
         "name": "WW90T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -125,7 +125,7 @@
     {
         "id": 4,
         "popularity": 3,
-        "image": "washer_4.webp",
+        "image": "washer-2.png",
         "name": "WW90T754ABT",
         "type": "Pralka",
         "line": "QuickDrive™",
@@ -166,7 +166,7 @@
     {
         "id": 5,
         "popularity": 2,
-        "image": "washer_5.webp",
+        "image": "washer-1.png",
         "name": "WW10T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -207,7 +207,7 @@
     {
         "id": 6,
         "popularity": 1,
-        "image": "washer_6.webp",
+        "image": "washer-2.png",
         "name": "WW90T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -248,7 +248,7 @@
     {
         "id": 6,
         "popularity": 7,
-        "image": "washer_2.webp",
+        "image": "washer-3.png",
         "name": "WW20T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -289,7 +289,7 @@
     {
         "id": 8,
         "popularity": 8,
-        "image": "washer_4.webp",
+        "image": "washer-1.png",
         "name": "MMM0T654CVH",
         "type": "Pralka",
         "line": "EcoBubble™",

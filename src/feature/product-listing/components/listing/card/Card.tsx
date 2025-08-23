@@ -1,15 +1,11 @@
-// import washerImage1 from '/assets/images/washer/washer-1.png';
-// import washerImage2 from '/assets/images/washer/washer-2.png';
-// import washerImage3 from '/assets/images/washer/washer-3.png';
-
-
-
 import type { IProductCardRo } from "../../../types/cardTypes";
+
 import ProductListInfo from "./productListInfo/ProductListInfo";
 import ProductPrice from "./productPrice/ProductPrice"
 
 
 export default function Card(
+    // { productState }: Readonly<IProductStateTypeRo>,
     { productCard }: Readonly<IProductCardRo>
 ) {
 
@@ -29,7 +25,7 @@ export default function Card(
     return (
 
         <li id={`card-${id}`} className='card-item'>
-            <img id={`img-${id}`} className='product-image' src={washerImageUrl} alt={machineType} />
+            <img id={`img-${id}`} className='product-image' src={`/assets/images/washer/${washerImageUrl}`} alt={machineType} />
             <div className='card-body'>
                 <h3 id={`prod-name-${id}`} className='product-name'>{productFullName}</h3>
 
