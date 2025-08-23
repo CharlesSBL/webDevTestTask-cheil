@@ -1,10 +1,10 @@
 
 import Card from './card/Card';
-import type { IProduct, IProductCard, IProductListInfo } from './cardTypes';
+import type { IProduct, IProductCard, IProductListInfo } from '../../types/cardTypes';
 
-import washerImage1 from '/assets/images/washer/washer-1.png';
-import washerImage2 from '/assets/images/washer/washer-2.png';
-import washerImage3 from '/assets/images/washer/washer-3.png';
+// import washerImage1 from '/assets/images/washer/washer-1.png';
+// import washerImage2 from '/assets/images/washer/washer-2.png';
+// import washerImage3 from '/assets/images/washer/washer-3.png';
 
 
 
@@ -16,6 +16,9 @@ import washerImage3 from '/assets/images/washer/washer-3.png';
  * 
  */
 export default function Listing() {
+
+
+    // MOCK Product Card
     const product_: IProduct = {
         id: 1,
         washerImageUrl: '/assets/images/washer/washer-3.png',
@@ -26,7 +29,6 @@ export default function Listing() {
         installmentsRate: 60
     };
 
-    // MOCK ProductList
     const listInfo_: IProductListInfo = {
         id: 1,
         productWeightMeasure: "kg",
@@ -55,7 +57,7 @@ export default function Listing() {
                         {
                             // TODO: here has to be mapping the productCard[] to cards
                             // + maybe here has to be mapping json to productCard[]
-                            Array.from({ length: 1 }).map((_, idx) => (
+                            Array.from({ length: 8 }).map((_, idx) => (
                                 <Card key={idx} productCard={productCard} />
                             ))
                         }

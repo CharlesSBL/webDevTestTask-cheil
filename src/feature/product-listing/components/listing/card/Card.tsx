@@ -4,7 +4,7 @@
 
 
 
-import type { IProductCardRo } from "../cardTypes";
+import type { IProductCardRo } from "../../../types/cardTypes";
 import ProductListInfo from "./productListInfo/ProductListInfo";
 import ProductPrice from "./productPrice/ProductPrice"
 

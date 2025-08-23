@@ -8,15 +8,11 @@ import Listing from './components/listing/Listing';
 export default function ProductListing() {
     return (
         <>
-
             <Header />
-            {/* impl order: 2 */}
+            {/* TODO: filter to make get request to server or test mock */}
             <Filter />
-            {/* impl order: 4 */}
             <Counter />
-            {/* impl order: 1 */}
             <Listing />
-            {/* impl order: 3 */}
             <Footer />
         </>
     )

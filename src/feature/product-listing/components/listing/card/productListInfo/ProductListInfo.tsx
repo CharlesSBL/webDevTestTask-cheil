@@ -2,7 +2,7 @@
 // import washerImage2 from '/assets/images/washer/washer-2.png';
 // import washerImage3 from '/assets/images/washer/washer-3.png';
 
-import type { IProductListInfoRo } from "../../cardTypes";
+import type { IProductListInfoRo } from "../../../../types/cardTypes";
 
 
 
