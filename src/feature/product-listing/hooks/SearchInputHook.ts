@@ -3,7 +3,6 @@ import type ProductDataTypes from "../types/ProductDataTypes";
 import type { IProductStateType } from "../types/ProductDataTypes";
 
 
-
 export default function SearchInputHook(
     productState: IProductStateType
 )
@@ -15,6 +14,18 @@ export default function SearchInputHook(
     const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) =>
         setSearchVal(event.target.value);
 
+    const fetchHandler = () => {
+        fetch("/data/products/products.json")
+            .then(response => {
+                if (!response.ok) throw new Error(response.statusText);
+                return response.json();
+            })
+            .then((data: ProductDataTypes[]) => {
+                console.log("about of all data: " + data.length)
+                productState.setProducts(data);
+            })
+    }
+
 
     useEffect(() => {
         const t = setTimeout(() => {
@@ -25,30 +36,9 @@ export default function SearchInputHook(
     });
 
     // first time fill the listing
-    useEffect(() => {
-
-        fetch("/data/products/products.json")
-            .then(response => {
-                if (!response.ok) throw new Error(response.statusText);
-                return response.json();
-            })
-            .then((data: ProductDataTypes[]) => {
-                productState.setProducts(data);
-            })
-
-    }, []);
+    useEffect(() => fetchHandler(), []);
 
 
-    useEffect(() => {
-        console.log("Products state has been updated:", productState.products);
-
-
-    }, [productState.products]);
-
-    // fetch data based on request
-    // newHook at root, send the [state, setState] to listing and here
-    // here is set a new array with cards info
-    // there is useEffect that put new info when the value is changes of it products
     useEffect(() => {
         if (searchRestRequestVal.trim() !== "") {
             console.log(`=== request data by name: ${searchRestRequestVal} ===`);
@@ -63,17 +53,12 @@ export default function SearchInputHook(
                         return item.full_name.includes(searchRestRequestVal)
                     })
 
+                    console.log("about of filtered data: " + filteredData.length)
+
                     productState.setProducts(filteredData);
                 })
         } else {
-            fetch("/data/products/products.json")
-                .then(response => {
-                    if (!response.ok) throw new Error(response.statusText);
-                    return response.json();
-                })
-                .then((data: ProductDataTypes[]) => {
-                    productState.setProducts(data);
-                })
+            fetchHandler()
         }
     }, [searchRestRequestVal]);
 

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "popularity": 6,
-        "image": "washer-1.png",
+        "image": "washer-1.webp",
         "name": "WW90T754ABT",
         "type": "Pralka",
         "line": "QuickDrive™",
@@ -43,7 +43,7 @@
     {
         "id": 2,
         "popularity": 5,
-        "image": "washer-2.png",
+        "image": "washer-2.webp",
         "name": "WW10T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -70,7 +70,7 @@
             "Wyświetlacz elektroniczny"
         ],
         "energy_class": "B",
-        "price": 3199.00,
+        "price": 2529.31,
         "currency": "zł",
         "price_expiration_date": {
             "from": "2022-09-15",
@@ -84,7 +84,7 @@
     {
         "id": 3,
         "popularity": 4,
-        "image": "washer-3.png",
+        "image": "washer-3.webp",
         "name": "WW90T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -125,7 +125,7 @@
     {
         "id": 4,
         "popularity": 3,
-        "image": "washer-2.png",
+        "image": "washer-2.webp",
         "name": "WW90T754ABT",
         "type": "Pralka",
         "line": "QuickDrive™",
@@ -166,7 +166,7 @@
     {
         "id": 5,
         "popularity": 2,
-        "image": "washer-1.png",
+        "image": "washer-1.webp",
         "name": "WW10T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -207,7 +207,7 @@
     {
         "id": 6,
         "popularity": 1,
-        "image": "washer-2.png",
+        "image": "washer-2.webp",
         "name": "WW90T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -246,9 +246,9 @@
         }
     },
     {
-        "id": 6,
+        "id": 7,
         "popularity": 7,
-        "image": "washer-3.png",
+        "image": "washer-3.webp",
         "name": "WW20T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
@@ -289,7 +289,7 @@
     {
         "id": 8,
         "popularity": 8,
-        "image": "washer-1.png",
+        "image": "washer-1.webp",
         "name": "MMM0T654CVH",
         "type": "Pralka",
         "line": "EcoBubble™",

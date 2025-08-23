@@ -5,11 +5,10 @@ import ProductPrice from "./productPrice/ProductPrice"
 
 
 export default function Card(
-    // { productState }: Readonly<IProductStateTypeRo>,
     { productCard }: Readonly<IProductCardRo>
 ) {
 
-    const { product, productListInfo } = productCard;
+    const { product, productListInfo, productPrice } = productCard;
     const {
         id,
         washerImageUrl,
@@ -17,7 +16,7 @@ export default function Card(
         productFullName,
         installmentsMonthlyFee,
         currencyKind,
-        installmentsRate
+        installmentsRate,
     } = product;
 
 
@@ -31,7 +30,7 @@ export default function Card(
 
                 <ProductListInfo listInfo={productListInfo} />
 
-                <ProductPrice />
+                <ProductPrice prodPriceProps={productPrice} />
 
                 <p className='installments'>{installmentsMonthlyFee} {currencyKind} x {installmentsRate} rat</p>
 

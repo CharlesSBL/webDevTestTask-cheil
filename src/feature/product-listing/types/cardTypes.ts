@@ -6,7 +6,11 @@ export interface IProductListInfo {
     productDimensionS: number,
     productDimensionW: number,
     productDimensionMeasure: string,
-    productFunctionality: string[]
+    productFunctionality: string[],
+
+    energyClass: string,
+    dateStart: Date,
+    dateEnd: Date
 }
 
 export interface IProductListInfoRo {
@@ -20,7 +24,8 @@ export interface IProduct {
     productFullName: string,
     installmentsMonthlyFee: number,
     currencyKind: string,
-    installmentsRate: number
+    installmentsRate: number,
+
 }
 
 export interface IProductRo {
@@ -30,9 +35,20 @@ export interface IProductRo {
 
 export interface IProductCard {
     product: IProduct,
-    productListInfo: IProductListInfo
+    productListInfo: IProductListInfo,
+    productPrice: IProductPrice
 }
 
 export interface IProductCardRo {
     readonly productCard: IProductCard
+}
+
+export interface IProductPrice {
+    productPrice: string,
+    productPriceRight: string,
+    currency: string
+}
+
+export interface IProductPriceRo {
+    readonly prodPriceProps: IProductPrice;
 }
