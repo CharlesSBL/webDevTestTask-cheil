@@ -1,224 +1,68 @@
+
+import Card from './card/Card';
+import type { IProduct, IProductCard, IProductListInfo } from './cardTypes';
+
 import washerImage1 from '/assets/images/washer/washer-1.png';
 import washerImage2 from '/assets/images/washer/washer-2.png';
 import washerImage3 from '/assets/images/washer/washer-3.png';
 
+
+
+
 // TODO: dynamic product card grid
+/**
+ * read array of card data
+ * implement for each the new card
+ * 
+ */
 export default function Listing() {
+    const product_: IProduct = {
+        id: 1,
+        washerImageUrl: '/assets/images/washer/washer-3.png',
+        machineType: 'washer',
+        productFullName: 'WW90T754ABT, Pralka QuickDrive™, 9 kg, biała',
+        installmentsMonthlyFee: 10,
+        currencyKind: 'zl',
+        installmentsRate: 60
+    };
+
+    // MOCK ProductList
+    const listInfo_: IProductListInfo = {
+        id: 1,
+        productWeightMeasure: "kg",
+        productWeightAmount: 10,
+        productDimensionG: 8,
+        productDimensionS: 5,
+        productDimensionW: 25,
+        productDimensionMeasure: "cm",
+        productFunctionality: ["Drzwi AddWash™", "Panel AI Control", "Silnik inwerterowy", "Wyświetlacz elektroniczny"]
+    };
+
+    const productCard: IProductCard = {
+        product: product_,
+        productListInfo: listInfo_
+    }
+
+
+
     return (
-        <>
-            <section className='container-out container-listing-out'>
-                <div className='container-in container-listing-in'>
-                    <div className='product-listing'>
 
-                        <ul className='card-grid'>
-                            <li id='card-1' className='card-item'>
-                                <img id='img-1' className='product-image' src={washerImage1} alt="washer machine" />
-                                <div className='card-body'>
-                                    <h3 id='prod-name-1' className='product-name'>WW90T754ABT, Pralka QuickDrive™, 9 kg, biała</h3>
-                                    <ul id='info-1' className='product-info-list'>
-                                        <li className='product-info-item capacity-info'>
-                                            <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>9</strong></p>
-                                        </li>
-                                        <li className='product-info-item dimensions-info'>
-                                            <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
-                                        </li>
-                                        <li className='product-info-item functions-info'>
-                                            <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy, Wyświetlacz elektroniczny</strong></p>
-                                        </li>
-                                        <li className='product-info-item energy-info'>
-                                            <p className='info-name energy-name'>Klasa energetyczna</p>
-                                            <span className='energy-value'>A</span>
-                                        </li>
-                                        <li className='product-info-item expiration-info'>
-                                            <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                                        </li>
-                                    </ul>
-                                    <div className='product-price'>
-                                        <h1 id='price-1' className='price-value'>3 199</h1>
-                                        <div className='price-value-right'>
-                                            <p className='value-right-val'><strong>00</strong></p>
-                                            <p className='value-right-currency'><strong>zł</strong></p>
-                                        </div>
-                                    </div>
-                                    <p className='installments'>53,31 zł x 60 rat</p>
+        <section className='container-out container-listing-out'>
+            <div className='container-in container-listing-in'>
+                <div className='product-listing'>
+                    <ul className='card-grid'>
 
-                                </div>
-                                <button id='btn-1' className='product-btn'>wybierz</button>
-                            </li>
-                            <li id='card-2' className='card-item'>
-                                <img id='img-2' className='product-image' src={washerImage2} alt="washer machine" />
-                                <div className='card-body'>
-                                    <h3 id='prod-name-2' className='product-name'>WW80T554DAE, Pralka EcoBubble™, 8 kg, biała</h3>
-                                    <ul id='info-2' className='product-info-list'>
-                                        <li className='product-info-item capacity-info'>
-                                            <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>8</strong></p>
-                                        </li>
-                                        <li className='product-info-item dimensions-info'>
-                                            <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
-                                        </li>
-                                        <li className='product-info-item functions-info'>
-                                            <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>EcoBubble™, Panel AI Control, Silnik inwerterowy</strong></p>
-                                        </li>
-                                        <li className='product-info-item energy-info'>
-                                            <p className='info-name energy-name'>Klasa energetyczna</p>
-                                            <span className='energy-value'>B</span>
-                                        </li>
-                                        <li className='product-info-item expiration-info'>
-                                            <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                                        </li>
-                                    </ul>
-                                    <div className='product-price'>
-                                        <h1 id='price-2' className='price-value'>2 799</h1>
-                                        <div className='price-value-right'>
-                                            <p className='value-right-val'><strong>00</strong></p>
-                                            <p className='value-right-currency'><strong>zł</strong></p>
-                                        </div>
-                                    </div>
-                                    <p className='installments'>46,65 zł x 60 rat</p>
-
-                                </div>
-                                <button id='btn-2' className='product-btn'>wybierz</button>
-                            </li>
-                            <li id='card-3' className='card-item'>
-                                <img id='img-3' className='product-image' src={washerImage3} alt="washer machine" />
-                                <div className='card-body'>
-                                    <h3 id='prod-name-3' className='product-name'>WW10T654DLH, Pralka AddWash™, 10.5 kg, biała</h3>
-                                    <ul id='info-3' className='product-info-list'>
-                                        <li className='product-info-item capacity-info'>
-                                            <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>10.5</strong></p>
-                                        </li>
-                                        <li className='product-info-item dimensions-info'>
-                                            <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>60 x 60 x 85 cm</strong></p>
-                                        </li>
-                                        <li className='product-info-item functions-info'>
-                                            <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Drzwi AddWash™, Panel AI Control, Silnik inwerterowy</strong></p>
-                                        </li>
-                                        <li className='product-info-item energy-info'>
-                                            <p className='info-name energy-name'>Klasa energetyczna</p>
-                                            <span className='energy-value'>A</span>
-                                        </li>
-                                        <li className='product-info-item expiration-info'>
-                                            <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                                        </li>
-                                    </ul>
-                                    <div className='product-price'>
-                                        <h1 id='price-3' className='price-value'>3 599</h1>
-                                        <div className='price-value-right'>
-                                            <p className='value-right-val'><strong>00</strong></p>
-                                            <p className='value-right-currency'><strong>zł</strong></p>
-                                        </div>
-                                    </div>
-                                    <p className='installments'>59,98 zł x 60 rat</p>
-
-                                </div>
-                                <button id='btn-3' className='product-btn'>wybierz</button>
-                            </li>
-                            <li id='card-4' className='card-item'>
-                                <img id='img-4' className='product-image' src={washerImage1} alt="washer machine" />
-                                <div className='card-body'>
-                                    <h3 id='prod-name-4' className='product-name'>WW70T4040CE, Pralka, 7 kg, biała</h3>
-                                    <ul id='info-4' className='product-info-list'>
-                                        <li className='product-info-item capacity-info'>
-                                            <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>7</strong></p>
-                                        </li>
-                                        <li className='product-info-item dimensions-info'>
-                                            <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
-                                        </li>
-                                        <li className='product-info-item functions-info'>
-                                            <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Panel AI Control, Silnik inwerterowy</strong></p>
-                                        </li>
-                                        <li className='product-info-item energy-info'>
-                                            <p className='info-name energy-name'>Klasa energetyczna</p>
-                                            <span className='energy-value'>C</span>
-                                        </li>
-                                        <li className='product-info-item expiration-info'>
-                                            <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                                        </li>
-                                    </ul>
-                                    <div className='product-price'>
-                                        <h1 id='price-4' className='price-value'>2 199</h1>
-                                        <div className='price-value-right'>
-                                            <p className='value-right-val'><strong>00</strong></p>
-                                            <p className='value-right-currency'><strong>zł</strong></p>
-                                        </div>
-                                    </div>
-                                    <p className='installments'>36,65 zł x 60 rat</p>
-
-                                </div>
-                                <button id='btn-4' className='product-btn'>wybierz</button>
-                            </li>
-                            <li id='card-5' className='card-item'>
-                                <img id='img-5' className='product-image' src={washerImage2} alt="washer machine" />
-                                <div className='card-body'>
-                                    <h3 id='prod-name-5' className='product-name'>WW90T534DAE, Pralka EcoBubble™, 9 kg, biała</h3>
-                                    <ul id='info-5' className='product-info-list'>
-                                        <li className='product-info-item capacity-info'>
-                                            <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>9</strong></p>
-                                        </li>
-                                        <li className='product-info-item dimensions-info'>
-                                            <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
-                                        </li>
-                                        <li className='product-info-item functions-info'>
-                                            <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>EcoBubble™, Panel AI Control</strong></p>
-                                        </li>
-                                        <li className='product-info-item energy-info'>
-                                            <p className='info-name energy-name'>Klasa energetyczna</p>
-                                            <span className='energy-value'>B</span>
-                                        </li>
-                                        <li className='product-info-item expiration-info'>
-                                            <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                                        </li>
-                                    </ul>
-                                    <div className='product-price'>
-                                        <h1 id='price-5' className='price-value'>2 999</h1>
-                                        <div className='price-value-right'>
-                                            <p className='value-right-val'><strong>00</strong></p>
-                                            <p className='value-right-currency'><strong>zł</strong></p>
-                                        </div>
-                                    </div>
-                                    <p className='installments'>49,98 zł x 60 rat</p>
-
-                                </div>
-                                <button id='btn-5' className='product-btn'>wybierz</button>
-                            </li>
-                            <li id='card-6' className='card-item'>
-                                <img id='img-6' className='product-image' src={washerImage3} alt="washer machine" />
-                                <div className='card-body'>
-                                    <h3 id='prod-name-6' className='product-name'>WW80T304MBW, Pralka, 8 kg, biała</h3>
-                                    <ul id='info-6' className='product-info-list'>
-                                        <li className='product-info-item capacity-info'>
-                                            <p className='info-name capacity-name'>Pojemność (kg): <strong className='product-info-value capacity-value'>8</strong></p>
-                                        </li>
-                                        <li className='product-info-item dimensions-info'>
-                                            <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>55 x 60 x 85 cm</strong></p>
-                                        </li>
-                                        <li className='product-info-item functions-info'>
-                                            <p className='info-name functions-name'>Funkcje: <strong className='product-info-value functions-value'>Silnik inwerterowy</strong></p>
-                                        </li>
-                                        <li className='product-info-item energy-info'>
-                                            <p className='info-name energy-name'>Klasa energetyczna</p>
-                                            <span className='energy-value'>D</span>
-                                        </li>
-                                        <li className='product-info-item expiration-info'>
-                                            <p className='info-name expiration-name'>Cena obowiązuje: <span className='expiration-value'>15.09.2022 - 21.09.2022</span></p>
-                                        </li>
-                                    </ul>
-                                    <div className='product-price'>
-                                        <h1 id='price-6' className='price-value'>1 899</h1>
-                                        <div className='price-value-right'>
-                                            <p className='value-right-val'><strong>00</strong></p>
-                                            <p className='value-right-currency'><strong>zł</strong></p>
-                                        </div>
-                                    </div>
-                                    <p className='installments'>31,65 zł x 60 rat</p>
-
-                                </div>
-                                <button id='btn-6' className='product-btn'>wybierz</button>
-                            </li>
-                        </ul>
-                    </div>
+                        {
+                            // TODO: here has to be mapping the productCard[] to cards
+                            // + maybe here has to be mapping json to productCard[]
+                            Array.from({ length: 1 }).map((_, idx) => (
+                                <Card key={idx} productCard={productCard} />
+                            ))
+                        }
+                    </ul>
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
+
     )
 }
