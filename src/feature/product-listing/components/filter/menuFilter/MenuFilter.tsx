@@ -16,14 +16,14 @@ export default function MenuFilter() {
             mainOption: "wszystkie"
         }, {
             id: 3,
-            name: "by",
-            header: "Sortuj po",
+            name: "energy",
+            header: "Klasa energetyczna",
             optionList: ["A", "B", "C", "D"],
             mainOption: "wszystkie"
         }, {
             id: 4,
-            name: "by",
-            header: "Sortuj po",
+            name: "capacity",
+            header: "Pojemność",
             optionList: ["9kg", "8kg", "10.5kg"],
             mainOption: "wszystkie"
         }
