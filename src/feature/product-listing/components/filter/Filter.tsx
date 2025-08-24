@@ -12,12 +12,16 @@ export default function Filter() {
     const {
         searchRestRequestVal,
         setSearchRestRequestVal,
+        menuFilterStateOptions,
+        setMenuFilterStateOptions,
         timeSearchUpdateMs
     } = FilterHook(productState!);
 
     const filterHookData = useMemo<IFetchStateData>(() => ({
         searchRestRequestVal,
         setSearchRestRequestVal,
+        menuFilterStateOptions,
+        setMenuFilterStateOptions,
         timeSearchUpdateMs
     }), [
         searchRestRequestVal,

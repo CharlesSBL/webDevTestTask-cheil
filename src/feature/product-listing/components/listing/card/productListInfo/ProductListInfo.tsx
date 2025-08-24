@@ -9,8 +9,8 @@ export default function ProductListInfo(
 ) {
     const {
         id,
-        productWeightMeasure,
-        productWeightAmount,
+        productCapacityMeasure,
+        productCapacityAmount,
         productDimensionG,
         productDimensionS,
         productDimensionW,
@@ -24,7 +24,7 @@ export default function ProductListInfo(
     return (
         <ul id={`info-${id}`} className='product-info-list'>
             <li className='product-info-item capacity-info'>
-                <p className='info-name capacity-name'>Pojemność ({productWeightMeasure}): <strong className='product-info-value capacity-value'>{productWeightAmount}</strong></p>
+                <p className='info-name capacity-name'>Pojemność ({productCapacityMeasure}): <strong className='product-info-value capacity-value'>{productCapacityAmount}</strong></p>
             </li>
             <li className='product-info-item dimensions-info'>
                 <p className='info-name dimensions-name'>Wymiary (GxSxW): <strong className='product-info-value dimensions-value'>{productDimensionG} x {productDimensionS} x {productDimensionW} {productDimensionMeasure}</strong></p>

@@ -17,8 +17,8 @@ export default function ProductsToCards(productState: IProductStateType) {
 
         const listInfo_: IProductListInfo = {
             id: data.id,
-            productWeightMeasure: data.weight.measure,
-            productWeightAmount: data.weight.amount,
+            productCapacityMeasure: data.capacity.measure,
+            productCapacityAmount: data.capacity.amount,
             productDimensionG: data.dimensions.G,
             productDimensionS: data.dimensions.S,
             productDimensionW: data.dimensions.W,

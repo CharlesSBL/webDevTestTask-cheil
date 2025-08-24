@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import { fetchContext } from "../Filter";
+import type { IFetchStateData } from "../../../hooks/FilterHook";
 
 export interface IFilterItem {
     id: number,
@@ -12,15 +14,21 @@ export interface IFilterItemRo {
     readonly filtItem: IFilterItem
 }
 
+// filter item 
 export function FilterItem(
     { filtItem }: Readonly<IFilterItemRo>
 ) {
     const [showOptions, setShowOptions] = useState(false);
     const selectedRef = useRef<HTMLDivElement>(null);
 
-
     const [selectOpt, setSelectOpt] = useState<string>(filtItem.mainOption);
     const [unselectOpt, setUnselectOpt] = useState<string[]>(filtItem.optionList);
+
+    const fetchStateData: IFetchStateData = useContext(fetchContext)!;
+    const {
+        setMenuFilterStateOptions,
+    } = fetchStateData;
+
 
     useEffect(() => {
         if (!showOptions) return;
@@ -34,6 +42,16 @@ export function FilterItem(
         document.addEventListener("click", pageClick);
         return () => document.removeEventListener("click", pageClick);
     }, [showOptions]);
+
+    useEffect(() => {
+        setMenuFilterStateOptions(prevState => {
+            const newState = prevState.slice();
+
+            newState[filtItem.id - 1] = selectOpt;
+
+            return newState;
+        })
+    }, [selectOpt])
 
     return (
 
@@ -55,7 +73,14 @@ export function FilterItem(
                         data-value={selectOpt}
                         onClick={() => setShowOptions(!showOptions)}
                     >
-                        <span>{selectOpt.includes("wszystkie") ? "Pokaż wszystkie" : selectOpt.replace(selectOpt.charAt(0), selectOpt.charAt(0).toLocaleUpperCase())}</span>
+                        <span>{
+                            selectOpt.includes("wszystkie") ?
+                                "Pokaż wszystkie"
+                                : selectOpt.replace(
+                                    selectOpt.charAt(0),
+                                    selectOpt.charAt(0).toLocaleUpperCase()
+                                )
+                        }</span>
                         <img src="/assets/images/arrow/arrow.svg" alt="arrow" />
                     </button>
                 </div>

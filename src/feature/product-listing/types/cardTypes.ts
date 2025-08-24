@@ -1,7 +1,7 @@
 export interface IProductListInfo {
     id: number,
-    productWeightMeasure: string,
-    productWeightAmount: number,
+    productCapacityMeasure: string,
+    productCapacityAmount: number,
     productDimensionG: number,
     productDimensionS: number,
     productDimensionW: number,

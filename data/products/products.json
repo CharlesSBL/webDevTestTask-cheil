@@ -23,17 +23,16 @@
             "measure": "cm"
         },
         "functionality": [
-            "Drzwi AddWash™",
-            "Panel AI Control",
             "Silnik inwerterowy",
-            "Wyświetlacz elektroniczny"
+            "Wyświetlacz elektroniczny",
+            "Panel AI Control"
         ],
         "energy_class": "A",
-        "price": 3199.00,
+        "price": 1648.92,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-01-15",
+            "to": "2023-01-21"
         },
         "installments": {
             "monthly_fee": 53.31,
@@ -65,7 +64,6 @@
         },
         "functionality": [
             "Drzwi AddWash™",
-            "Panel AI Control",
             "Silnik inwerterowy",
             "Wyświetlacz elektroniczny"
         ],
@@ -73,11 +71,11 @@
         "price": 2529.31,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-02-10",
+            "to": "2023-02-17"
         },
         "installments": {
-            "monthly_fee": 53.31,
+            "monthly_fee": 42.15,
             "rate": 60
         }
     },
@@ -88,14 +86,14 @@
         "name": "WW90T654DLH",
         "type": "Pralka",
         "line": "EcoBubble™",
-        "color": "biała",
-        "full_name": "WW90T654DLH, Pralka EcoBubble™, 9 kg, biała",
+        "color": "srebrna",
+        "full_name": "WW90T654DLH, Pralka EcoBubble™, 9 kg, srebrna",
         "weight": {
             "amount": 9.0,
             "measure": "kg"
         },
         "capacity": {
-            "amount": 8.0,
+            "amount": 9.0,
             "measure": "kg"
         },
         "dimensions": {
@@ -111,32 +109,32 @@
             "Wyświetlacz elektroniczny"
         ],
         "energy_class": "C",
-        "price": 3199.00,
+        "price": 3399.00,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-03-05",
+            "to": "2023-03-12"
         },
         "installments": {
-            "monthly_fee": 53.31,
+            "monthly_fee": 56.65,
             "rate": 60
         }
     },
     {
         "id": 4,
         "popularity": 3,
-        "image": "washer-2.webp",
-        "name": "WW90T754ABT",
+        "image": "washer-1.webp",
+        "name": "WW80T754ABH",
         "type": "Pralka",
         "line": "QuickDrive™",
-        "color": "biała",
-        "full_name": "WW90T754ABT, Pralka QuickDrive™, 9 kg, biała",
+        "color": "czarna",
+        "full_name": "WW80T754ABH, Pralka QuickDrive™, 8 kg, czarna",
         "weight": {
-            "amount": 9.0,
+            "amount": 8.0,
             "measure": "kg"
         },
         "capacity": {
-            "amount": 9.0,
+            "amount": 8.0,
             "measure": "kg"
         },
         "dimensions": {
@@ -148,73 +146,71 @@
         "functionality": [
             "Drzwi AddWash™",
             "Panel AI Control",
-            "Silnik inwerterowy",
-            "Wyświetlacz elektroniczny"
+            "Silnik inwerterowy"
         ],
-        "energy_class": "D",
-        "price": 3199.00,
+        "energy_class": "A",
+        "price": 4925.26,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-04-20",
+            "to": "2023-04-27"
         },
         "installments": {
-            "monthly_fee": null,
-            "rate": null
+            "monthly_fee": 49.98,
+            "rate": 60
         }
     },
     {
         "id": 5,
-        "popularity": 2,
-        "image": "washer-1.webp",
-        "name": "WW10T654DLH",
+        "popularity": 7,
+        "image": "washer-2.webp",
+        "name": "WW11BBA046AE",
         "type": "Pralka",
-        "line": "EcoBubble™",
+        "line": "BESPOKE AI™",
         "color": "biała",
-        "full_name": "WW10T654DLH, Pralka EcoBubble™, 10,5 kg, biała",
+        "full_name": "WW11BBA046AE, Pralka BESPOKE AI™, 10,5 kg, biała",
         "weight": {
             "amount": 10.5,
             "measure": "kg"
         },
         "capacity": {
-            "amount": 9.0,
+            "amount": 10.5,
             "measure": "kg"
         },
         "dimensions": {
-            "G": 55,
+            "G": 60,
             "S": 60,
             "W": 85,
             "measure": "cm"
         },
         "functionality": [
-            "Drzwi AddWash™",
             "Panel AI Control",
             "Silnik inwerterowy",
             "Wyświetlacz elektroniczny"
         ],
-        "energy_class": "E",
-        "price": 3199.00,
+        "energy_class": "A",
+        "price": 3899.00,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-05-15",
+            "to": "2023-05-22"
         },
         "installments": {
-            "monthly_fee": null,
-            "rate": null
+            "monthly_fee": 64.98,
+            "rate": 60
         }
     },
     {
         "id": 6,
-        "popularity": 1,
-        "image": "washer-2.webp",
-        "name": "WW90T654DLH",
+        "popularity": 8,
+        "image": "washer-1.webp",
+        "name": "WW12BBX046AE",
         "type": "Pralka",
-        "line": "EcoBubble™",
-        "color": "biała",
-        "full_name": "WW90T654DLH, Pralka EcoBubble™, 8 kg, biała",
+        "line": "BESPOKE AI™",
+        "color": "grafitowa",
+        "full_name": "WW12BBX046AE, Pralka BESPOKE AI™, 8 kg, grafitowa",
         "weight": {
-            "amount": 8.0,
+            "amount": 12.0,
             "measure": "kg"
         },
         "capacity": {
@@ -222,64 +218,60 @@
             "measure": "kg"
         },
         "dimensions": {
-            "G": 55,
+            "G": 65,
             "S": 60,
             "W": 85,
             "measure": "cm"
         },
         "functionality": [
-            "Drzwi AddWash™",
             "Panel AI Control",
-            "Silnik inwerterowy",
-            "Wyświetlacz elektroniczny"
+            "Silnik inwerterowy"
         ],
-        "energy_class": "F",
-        "price": 3199.00,
+        "energy_class": "B",
+        "price": 4199.50,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-06-11",
+            "to": "2023-06-18"
         },
         "installments": {
-            "monthly_fee": null,
-            "rate": null
+            "monthly_fee": 69.99,
+            "rate": 60
         }
     },
     {
         "id": 7,
-        "popularity": 7,
-        "image": "washer-3.webp",
-        "name": "WW20T654DLH",
+        "popularity": 2,
+        "image": "washer-2.webp",
+        "name": "WW70T454DEX",
         "type": "Pralka",
         "line": "EcoBubble™",
-        "color": "biała",
-        "full_name": "WW20T654DLH, Pralka EcoBubble™, 8 kg, biała",
+        "color": "inox",
+        "full_name": "WW70T454DEX, Pralka EcoBubble™, 9 kg, inox",
         "weight": {
-            "amount": 8.0,
+            "amount": 7.0,
             "measure": "kg"
         },
         "capacity": {
-            "amount": 8.0,
+            "amount": 9.0,
             "measure": "kg"
         },
         "dimensions": {
-            "G": 55,
+            "G": 50,
             "S": 60,
             "W": 85,
             "measure": "cm"
         },
         "functionality": [
-            "Drzwi AddWash™",
-            "Panel AI Control",
             "Silnik inwerterowy",
             "Wyświetlacz elektroniczny"
         ],
-        "energy_class": "F",
-        "price": 3199.00,
+        "energy_class": "D",
+        "price": 1899.99,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2024-01-02",
+            "to": "2024-01-09"
         },
         "installments": {
             "monthly_fee": null,
@@ -288,19 +280,19 @@
     },
     {
         "id": 8,
-        "popularity": 8,
-        "image": "washer-1.webp",
-        "name": "MMM0T654CVH",
+        "popularity": 9,
+        "image": "washer-3.webp",
+        "name": "WW90T954ASH",
         "type": "Pralka",
-        "line": "EcoBubble™",
+        "line": "QuickDrive™",
         "color": "biała",
-        "full_name": "MMM0T654CVH, Pralka EcoBubble™, 8 kg, biała",
+        "full_name": "WW90T954ASH, Pralka QuickDrive™, 9 kg, biała",
         "weight": {
-            "amount": 8.0,
+            "amount": 9.0,
             "measure": "kg"
         },
         "capacity": {
-            "amount": 8.0,
+            "amount": 9.0,
             "measure": "kg"
         },
         "dimensions": {
@@ -315,12 +307,286 @@
             "Silnik inwerterowy",
             "Wyświetlacz elektroniczny"
         ],
-        "energy_class": "F",
-        "price": 3199.00,
+        "energy_class": "A",
+        "price": 3750.00,
         "currency": "zł",
         "price_expiration_date": {
-            "from": "2022-09-15",
-            "to": "2022-09-21"
+            "from": "2023-09-15",
+            "to": "2023-09-22"
+        },
+        "installments": {
+            "monthly_fee": 78.13,
+            "rate": 48
+        }
+    },
+    {
+        "id": 9,
+        "popularity": 5,
+        "image": "washer-1.webp",
+        "name": "WW80T654DLH",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "szara",
+        "full_name": "WW80T654DLH, Pralka EcoBubble™, 8 kg, szara",
+        "weight": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 52,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Silnik inwerterowy"
+        ],
+        "energy_class": "C",
+        "price": 2450.70,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2024-02-20",
+            "to": "2024-02-27"
+        },
+        "installments": {
+            "monthly_fee": 40.85,
+            "rate": 60
+        }
+    },
+    {
+        "id": 10,
+        "popularity": 7,
+        "image": "washer-2.webp",
+        "name": "WW11BBA047AE",
+        "type": "Pralka",
+        "line": "BESPOKE AI™",
+        "color": "czarna",
+        "full_name": "WW11BBA047AE, Pralka BESPOKE AI™, 10.5 kg, czarna",
+        "weight": {
+            "amount": 11.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 10.5,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 62,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Panel AI Control",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "A",
+        "price": 4321.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2023-11-01",
+            "to": "2023-11-08"
+        },
+        "installments": {
+            "monthly_fee": 144.03,
+            "rate": 30
+        }
+    },
+    {
+        "id": 11,
+        "popularity": 1,
+        "image": "washer-3.webp",
+        "name": "WW60J4213HW",
+        "type": "Pralka",
+        "line": "Standard",
+        "color": "biała",
+        "full_name": "WW60J4213HW, Pralka, 8 kg, biała",
+        "weight": {
+            "amount": 6.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 45,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "D",
+        "price": 1599.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2024-03-10",
+            "to": "2024-03-17"
+        },
+        "installments": {
+            "monthly_fee": null,
+            "rate": null
+        }
+    },
+    {
+        "id": 12,
+        "popularity": 10,
+        "image": "washer-1.webp",
+        "name": "WW90T754ABT/S6",
+        "type": "Pralka",
+        "line": "QuickDrive™",
+        "color": "srebrna",
+        "full_name": "WW90T754ABT/S6, Pralka QuickDrive™, 9 kg, srebrna",
+        "weight": {
+            "amount": 9.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 9.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 55,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Drzwi AddWash™",
+            "Silnik inwerterowy",
+            "Wyświetlacz elektroniczny"
+        ],
+        "energy_class": "B",
+        "price": 3333.33,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2023-08-05",
+            "to": "2023-08-12"
+        },
+        "installments": {
+            "monthly_fee": 55.56,
+            "rate": 60
+        }
+    },
+    {
+        "id": 13,
+        "popularity": 4,
+        "image": "washer-2.webp",
+        "name": "WW8NK52E0VW",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "biała",
+        "full_name": "WW8NK52E0VW, Pralka EcoBubble™, 8 kg, biała",
+        "weight": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 8.0,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 50,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Silnik inwerterowy",
+            "Drzwi AddWash™"
+        ],
+        "energy_class": "C",
+        "price": 2222.22,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2024-04-01",
+            "to": "2024-04-08"
+        },
+        "installments": {
+            "monthly_fee": 46.30,
+            "rate": 48
+        }
+    },
+    {
+        "id": 14,
+        "popularity": 6,
+        "image": "washer-3.webp",
+        "name": "WW10T654DLH/S4",
+        "type": "Pralka",
+        "line": "EcoBubble™",
+        "color": "inox",
+        "full_name": "WW10T654DLH/S4, Pralka EcoBubble™, 10.5 kg, inox",
+        "weight": {
+            "amount": 10.5,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 10.5,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 58,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Panel AI Control",
+            "Drzwi AddWash™",
+            "Silnik inwerterowy"
+        ],
+        "energy_class": "A",
+        "price": 3999.00,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2023-12-19",
+            "to": "2023-12-26"
+        },
+        "installments": {
+            "monthly_fee": 66.65,
+            "rate": 60
+        }
+    },
+    {
+        "id": 15,
+        "popularity": 3,
+        "image": "washer-1.webp",
+        "name": "WW70T552DAE",
+        "type": "Pralka",
+        "line": "QuickDrive™",
+        "color": "grafitowa",
+        "full_name": "WW70T552DAE, Pralka QuickDrive™, 9 kg, grafitowa",
+        "weight": {
+            "amount": 9,
+            "measure": "kg"
+        },
+        "capacity": {
+            "amount": 9,
+            "measure": "kg"
+        },
+        "dimensions": {
+            "G": 50,
+            "S": 60,
+            "W": 85,
+            "measure": "cm"
+        },
+        "functionality": [
+            "Wyświetlacz elektroniczny",
+            "Panel AI Control"
+        ],
+        "energy_class": "B",
+        "price": 2897.65,
+        "currency": "zł",
+        "price_expiration_date": {
+            "from": "2024-05-14",
+            "to": "2024-05-21"
         },
         "installments": {
             "monthly_fee": null,
