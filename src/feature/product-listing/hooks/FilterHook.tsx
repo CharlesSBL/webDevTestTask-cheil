@@ -68,7 +68,7 @@ export function FilterHook(productState: IProductStateType): IFetchStateData {
                     })
                 }
 
-                if (menuFilterStateOptions.length > 0) {
+                if (menuFilterStateOptions.length == 4 && menuFilterStateOptions.every(item => item.trim() !== "")) {
                     const productSortingBy = menuFilterStateOptions[0];
 
                     switch (productSortingBy) {
