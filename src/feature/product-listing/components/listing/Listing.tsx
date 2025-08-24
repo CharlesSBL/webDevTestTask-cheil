@@ -1,19 +1,16 @@
-
-import Card from './card/Card';
 import type { IProductCard } from '../../types/cardTypes';
-import type { IProductStateTypeRo } from '../../types/ProductDataTypes';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import ProductsToCards from '../../functions/ProductsToCards';
+import { ProductContext } from '../../ProductListing';
+import productsToCardComponents from '../../functions/productsToCardComponents';
 
 
 export default function Listing(
-    { productState }: Readonly<IProductStateTypeRo>
 ) {
+    const productState = useContext(ProductContext);
     const [productCards, setProductCards] = useState<IProductCard[]>([])
     const [cardsAmountMax, setCardsAmountMax] = useState<number>(6);
-
-    useEffect(() => setProductCards(ProductsToCards(productState)), [productState.products])
-
+    useEffect(() => setProductCards(ProductsToCards(productState!)), [productState!.products])
 
     // TODO: add more button fix in footer
     const amountCards = productCards.length > cardsAmountMax ? cardsAmountMax : productCards.length;
@@ -23,11 +20,7 @@ export default function Listing(
             <div className='container-in container-listing-in'>
                 <div className='product-listing'>
                     <ul className='card-grid'>
-                        {
-                            productCards.slice(0, amountCards).map((card) => (
-                                <Card key={card.product.id} productCard={card} />
-                            ))
-                        }
+                        {productsToCardComponents(productCards, amountCards)}
                     </ul>
                 </div>
             </div>

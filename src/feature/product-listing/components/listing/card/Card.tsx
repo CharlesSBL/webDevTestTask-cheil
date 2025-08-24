@@ -1,7 +1,9 @@
 import type { IProductCardRo } from "../../../types/cardTypes";
+import Installments from "./Installments/Installments";
 
 import ProductListInfo from "./productListInfo/ProductListInfo";
 import ProductPrice from "./productPrice/ProductPrice"
+
 
 
 export default function Card(
@@ -21,6 +23,7 @@ export default function Card(
 
 
 
+
     return (
 
         <li id={`card-${id}`} className='card-item'>
@@ -32,8 +35,11 @@ export default function Card(
 
                 <ProductPrice prodPriceProps={productPrice} />
 
-                <p className='installments'>{installmentsMonthlyFee} {currencyKind} x {installmentsRate} rat</p>
-
+                <Installments installProps={{
+                    installmentsMonthlyFee,
+                    currencyKind,
+                    installmentsRate,
+                }}></Installments>
             </div>
             <button id={`btn-${id}`} className='product-btn'>wybierz</button>
         </li>

@@ -1,3 +1,4 @@
+
 export default function prodFuncMap(array: string[]) {
     if (array.length == 0) return null;
 

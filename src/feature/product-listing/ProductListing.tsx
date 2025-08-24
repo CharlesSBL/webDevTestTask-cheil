@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { createContext, useMemo, useState } from 'react';
 import Counter from './components/counter/Counter';
 import Filter from './components/filter/Filter';
 import Footer from './components/footer/Footer';
@@ -7,20 +7,21 @@ import Listing from './components/listing/Listing';
 import type ProductDataTypes from './types/ProductDataTypes';
 import type { IProductStateType } from './types/ProductDataTypes';
 
-
+export const ProductContext = createContext<IProductStateType | null>(null);
 
 export default function ProductListing() {
     const [products, setProducts] = useState<ProductDataTypes[]>([]);
-    const productState: IProductStateType = { products, setProducts };
+
+    // The 'productState' object passed as the value prop to the Context provider changes every render. To fix this consider wrapping it in a useMemo hook.sonarqube(typescript:S6481)
+    const productState = useMemo<IProductStateType>(() => ({ products, setProducts }), [products]);
 
     return (
-        <>
+        <ProductContext value={productState}>
             <Header />
-            {/* TODO: filter to make get request to server or test mock */}
-            <Filter productState={productState} />
+            <Filter />
             <Counter />
-            <Listing productState={productState} />
+            <Listing />
             <Footer />
-        </>
+        </ProductContext>
     )
 }

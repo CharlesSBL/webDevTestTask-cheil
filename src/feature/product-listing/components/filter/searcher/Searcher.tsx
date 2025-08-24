@@ -1,15 +1,13 @@
 
+import { useContext } from "react";
 import SearchInputHook from "../../../hooks/SearchInputHook";
-import type { IProductStateTypeRo } from "../../../types/ProductDataTypes";
+import { ProductContext } from "../../../ProductListing";
 
 
-
-// TODO: search handler to make requests and 
-// it's view, need controller
 export default function Searcher(
-    { productState }: Readonly<IProductStateTypeRo>
 ) {
-    const [searchInputVal, searchInputHandler] = SearchInputHook(productState);
+    const productState = useContext(ProductContext);
+    const [searchInputVal, searchInputHandler] = SearchInputHook(productState!);
 
     return (
         <input

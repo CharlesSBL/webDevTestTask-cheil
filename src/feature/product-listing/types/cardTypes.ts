@@ -52,3 +52,13 @@ export interface IProductPrice {
 export interface IProductPriceRo {
     readonly prodPriceProps: IProductPrice;
 }
+
+export interface InstallmentsInterface {
+    installmentsMonthlyFee: number,
+    currencyKind: string,
+    installmentsRate: number
+}
+
+export interface InstallmentsInterfaceRo {
+    readonly installProps: InstallmentsInterface;
+}
