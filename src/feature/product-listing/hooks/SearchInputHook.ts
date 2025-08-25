@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { IFetchStateData } from "./FilterHook";
+import type { IFetchStateData } from "../interfaces/interfaces";
 
 export default function SearchInputHook(
     fetchStateData: IFetchStateData
@@ -13,12 +13,10 @@ export default function SearchInputHook(
     // value of search input tag
     const [searchVal, setSearchVal] = useState<string>("");
 
-
     // change value of input
     const searchHandler =
         (event: React.ChangeEvent<HTMLInputElement>) =>
             setSearchVal(event.target.value);
-
 
     // preparing the request name of products to filter 
     useEffect(() => {

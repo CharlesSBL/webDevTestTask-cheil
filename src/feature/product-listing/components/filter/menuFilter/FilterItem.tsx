@@ -1,18 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import { fetchContext } from "../Filter";
-import type { IFetchStateData } from "../../../hooks/FilterHook";
+import type { IFilterItemRo, IFetchStateData } from "../../../interfaces/interfaces";
+import { fetchContext } from "../../../context/context";
 
-export interface IFilterItem {
-    id: number,
-    name: string,
-    header: string,
-    optionList: string[]
-    mainOption: string
-}
-
-export interface IFilterItemRo {
-    readonly filtItem: IFilterItem
-}
 
 // filter item 
 export function FilterItem(

@@ -1,7 +1,6 @@
-
-import type { IProductListInfoRo } from "../../../../types/cardTypes";
-import dateToStr from "../../../../functions/dateToStr";
-import prodFuncMap from "../../../../functions/prodFuncMap";
+import type { IProductListInfoRo } from "../../../types/cardTypes";
+import dateToStr from "../../../functions/dateToStr";
+import prodFuncMap from "../../../functions/prodFuncMap";
 
 
 export default function ProductListInfo(

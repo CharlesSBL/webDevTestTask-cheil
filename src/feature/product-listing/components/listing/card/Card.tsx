@@ -1,9 +1,7 @@
 import type { IProductCardRo } from "../../../types/cardTypes";
-import Installments from "./Installments/Installments";
-
-import ProductListInfo from "./productListInfo/ProductListInfo";
-import ProductPrice from "./productPrice/ProductPrice"
-
+import Installments from "./Installments";
+import ProductListInfo from "./ProductListInfo";
+import ProductPrice from "./ProductPrice"
 
 
 export default function Card(
@@ -21,11 +19,7 @@ export default function Card(
         installmentsRate,
     } = product;
 
-
-
-
     return (
-
         <li id={`card-${id}`} className='card-item'>
             <img id={`img-${id}`} className='product-image' src={`/assets/images/washer/${washerImageUrl}`} alt={machineType} />
             <div className='card-body'>
@@ -39,10 +33,9 @@ export default function Card(
                     installmentsMonthlyFee,
                     currencyKind,
                     installmentsRate,
-                }}></Installments>
+                }} />
             </div>
             <button id={`btn-${id}`} className='product-btn'>wybierz</button>
         </li>
-
     )
 }

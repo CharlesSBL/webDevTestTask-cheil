@@ -1,6 +1,6 @@
+import type { IProductStateType } from "../interfaces/interfaces";
 import type { IProduct, IProductCard, IProductListInfo, IProductPrice } from "../types/cardTypes";
 import type ProductDataTypes from "../types/ProductDataTypes";
-import type { IProductStateType } from "../types/ProductDataTypes";
 
 
 export default function ProductsToCards(productState: IProductStateType) {

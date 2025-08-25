@@ -1,4 +1,4 @@
-import type { IFilterItem } from "./FilterItem";
+import type { IFilterItem } from "../../../interfaces/interfaces";
 
 export const filterItemsData: IFilterItem[] = [
     {

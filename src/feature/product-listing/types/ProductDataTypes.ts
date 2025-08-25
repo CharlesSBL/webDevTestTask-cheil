@@ -35,11 +35,3 @@ export default interface ProductDataTypes {
     }
 }
 
-export interface IProductStateType {
-    products: ProductDataTypes[]
-    setProducts: React.Dispatch<React.SetStateAction<ProductDataTypes[]>>
-}
-
-export interface IProductStateTypeRo {
-    readonly productState: IProductStateType
-}

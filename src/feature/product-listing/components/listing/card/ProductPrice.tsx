@@ -1,9 +1,8 @@
-import type { IProductPriceRo } from "../../../../types/cardTypes";
-
+import type { IProductPriceRo } from "../../../types/cardTypes";
 
 
 export default function ProductPrice(
-    { prodPriceProps }: IProductPriceRo
+    { prodPriceProps }: Readonly<IProductPriceRo>
 ) {
     const {
         productPrice,

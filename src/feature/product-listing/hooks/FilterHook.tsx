@@ -1,48 +1,8 @@
 import { useState, useEffect } from "react";
 import type ProductDataTypes from "../types/ProductDataTypes";
-import type { IProductStateType } from "../types/ProductDataTypes";
+import type { IProductStateType, IFetchStateData } from "../interfaces/interfaces";
+import { filterData } from "../functions/filterData";
 
-const filterData = (newData: ProductDataTypes[], menuFilterStateOptions: string[]) => {
-    const allProducts = "wszystkie";
-
-    return newData
-        .filter(item => {
-            const productFunctions = menuFilterStateOptions[1];
-            if (productFunctions !== allProducts) {
-                return item.functionality.includes(productFunctions)
-            } else {
-                return true
-            }
-        })
-        .filter(item => {
-            const productEnergyClass = menuFilterStateOptions[2];
-            if (productEnergyClass !== allProducts) {
-                return item.energy_class === productEnergyClass
-            } else {
-                return true
-            }
-        })
-        .filter(item => {
-            const productWeight = menuFilterStateOptions[3]
-            if (productWeight !== allProducts) {
-                return item.capacity.amount === parseFloat(productWeight.split("kg")[0]);
-            } else {
-                return true
-            }
-        });
-}
-
-export interface IFetchStateData {
-    searchRestRequestVal: string,
-    setSearchRestRequestVal: React.Dispatch<React.SetStateAction<string>>,
-    menuFilterStateOptions: string[],
-    setMenuFilterStateOptions: React.Dispatch<React.SetStateAction<string[]>>
-    timeSearchUpdateMs: number,
-}
-
-export interface IFetchStateDataRo {
-    readonly fetchStateData: IFetchStateData;
-}
 // TODO:
 // add sum of products that appears,
 // has take a state of sum that appears
@@ -50,7 +10,9 @@ export interface IFetchStateDataRo {
 // 
 //  fix the price mapping to card 
 
-export function FilterHook(productState: IProductStateType): IFetchStateData {
+export function FilterHook(
+    productState: IProductStateType
+): IFetchStateData {
     const [menuFilterStateOptions, setMenuFilterStateOptions] = useState<string[]>([]);
     const [searchRestRequestVal, setSearchRestRequestVal] = useState<string>("");
     const timeSearchUpdateMs = 250;
@@ -68,7 +30,8 @@ export function FilterHook(productState: IProductStateType): IFetchStateData {
                     })
                 }
 
-                if (menuFilterStateOptions.length == 4 && menuFilterStateOptions.every(item => item.trim() !== "")) {
+                const amountOfTypesOfOptions = 4;
+                if (menuFilterStateOptions.length == amountOfTypesOfOptions && menuFilterStateOptions.every(item => item.trim() !== "")) {
                     const productSortingBy = menuFilterStateOptions[0];
 
                     switch (productSortingBy) {
@@ -108,8 +71,6 @@ export function FilterHook(productState: IProductStateType): IFetchStateData {
                     productState.setProducts(data);
                 }
             })
-            .catch(error => console.error("Failed to fetch or process products:", error));
-
     }, [menuFilterStateOptions, searchRestRequestVal]);
 
     return {
