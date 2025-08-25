@@ -392,13 +392,14 @@ footer {
     font-family: $font-bold;
 }
 
-.card-expand a {
+.card-expand button {
     position: relative;
     letter-spacing: 0.06rem;
     padding-bottom: 3rem;
+    margin-top: 1rem;
 }
 
-.card-expand a::after {
+.card-expand button::after {
     position: absolute;
     content: '';
 

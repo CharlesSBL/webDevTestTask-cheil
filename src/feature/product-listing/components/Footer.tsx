@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer>
             <div className='card-expand'>
-                <button
+                <button className="expand-btn"
                     onClick={() => {
                         console.log("click!");
 
@@ -17,7 +17,6 @@ export default function Footer() {
                     }}
                 >
                     <p>Pokaż więcej</p>
-                    <img src="/assets/images/foot_arrow/foot_arrow.svg" alt="" />
                 </button>
             </div>
         </footer >
