@@ -1,5 +1,11 @@
 # React + TypeScript + Vite
 
+docker build -t cheil-poland .
+docker run -d -p 8080:80 cheil-poland
+
+vercel deploy: https://web-dev-test-task-cheil.vercel.app/
+
+
 
 implemented features :  
     0. the dropbox is shuting down when mouse is clicked outside the box
@@ -11,5 +17,3 @@ implemented features :
     6. the foot "expand btn" reset after changing the options
     7. added docker
 
-docker build -t cheil-poland .
-docker run -d -p 8080:80 cheil-poland
