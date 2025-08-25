@@ -1,11 +1,25 @@
+import { useContext } from "react";
+import { MaxContext } from "../context/context";
 
-// TODO: dynamic expand handler 
 export default function Footer() {
+    const maxCards = useContext(MaxContext);
+
     return (
         <footer>
             <div className='card-expand'>
-                <a href=".">Pokaż więcej</a>
+                <button
+                    onClick={() => {
+                        console.log("click!");
+
+                        maxCards?.setCardsAmountMax((current) => {
+                            return current + 6
+                        })
+                    }}
+                >
+                    <p>Pokaż więcej</p>
+                    <img src="/assets/images/foot_arrow/foot_arrow.svg" alt="" />
+                </button>
             </div>
-        </footer>
+        </footer >
     )
 }

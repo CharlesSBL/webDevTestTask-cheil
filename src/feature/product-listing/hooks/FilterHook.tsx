@@ -3,13 +3,6 @@ import type ProductDataTypes from "../types/ProductDataTypes";
 import type { IProductStateType, IFetchStateData, IProductQuantity } from "../interfaces/interfaces";
 import { filterData } from "../functions/filterData";
 
-// TODO:
-// add sum of products that appears,
-// has take a state of sum that appears
-// show more click add to state of gap a + 6 each time,
-// 
-//  fix the price mapping to card 
-
 export function FilterHook(
     productState: IProductStateType,
     productQuantity: IProductQuantity
@@ -64,8 +57,11 @@ export function FilterHook(
                             productState.setProducts(filteredData3);
                             break;
                         default:
+                            const copyData4 = data.slice();
+
+                            const filteredData4 = filterData(copyData4, menuFilterStateOptions)
                             productQuantity.setProductQuantity(data.length)
-                            productState.setProducts(data);
+                            productState.setProducts(filteredData4);
                             break;
                     }
                 } else {

@@ -41,3 +41,12 @@ export interface IProductQuantity {
 export interface IProductQuantityRo {
     readonly counterProps: IProductQuantity
 }
+
+export interface ICardMax {
+    cardsAmountMax: number,
+    setCardsAmountMax: React.Dispatch<React.SetStateAction<number>>
+}
+
+export interface ICardMaxRo {
+    readonly cardMax: ICardMax
+}
