@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import type ProductDataTypes from "../types/ProductDataTypes";
-import type { IProductStateType, IFetchStateData, IProductQuantity } from "../interfaces/interfaces";
+import type { IProductStateType, IFetchStateData, IProductQuantity, ICardMax } from "../interfaces/interfaces";
 import { filterData } from "../functions/filterData";
 
 export function FilterHook(
     productState: IProductStateType,
-    productQuantity: IProductQuantity
+    productQuantity: IProductQuantity,
+    cardMax: ICardMax
 ): IFetchStateData {
     const [menuFilterStateOptions, setMenuFilterStateOptions] = useState<string[]>([]);
     const [searchRestRequestVal, setSearchRestRequestVal] = useState<string>("");
@@ -37,6 +38,7 @@ export function FilterHook(
                             const filteredData1 = filterData(copyData1, menuFilterStateOptions)
                             productQuantity.setProductQuantity(filteredData1.length)
                             productState.setProducts(filteredData1);
+                            cardMax.setCardsAmountMax(6);
                             break;
                         case "cena":
                             const copyData2 = data.slice();
@@ -46,6 +48,7 @@ export function FilterHook(
                             const filteredData2 = filterData(copyData2, menuFilterStateOptions)
                             productQuantity.setProductQuantity(filteredData2.length)
                             productState.setProducts(filteredData2);
+                            cardMax.setCardsAmountMax(6);
                             break;
                         case "pojemność":
                             const copyData3 = data.slice();
@@ -55,17 +58,20 @@ export function FilterHook(
                             const filteredData3 = filterData(copyData3, menuFilterStateOptions)
                             productQuantity.setProductQuantity(filteredData3.length)
                             productState.setProducts(filteredData3);
+                            cardMax.setCardsAmountMax(6);
                             break;
                         default:
                             const copyData4 = data.slice();
 
                             const filteredData4 = filterData(copyData4, menuFilterStateOptions)
-                            productQuantity.setProductQuantity(data.length)
+                            productQuantity.setProductQuantity(filteredData4.length)
                             productState.setProducts(filteredData4);
+                            cardMax.setCardsAmountMax(6);
                             break;
                     }
                 } else {
-                    productQuantity.setProductQuantity(data.length)
+                    cardMax.setCardsAmountMax(6);
+                    productQuantity.setProductQuantity(data.length);
                     productState.setProducts(data);
                 }
             })

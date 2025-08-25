@@ -3,12 +3,13 @@ import { FilterHook } from "../../hooks/FilterHook";
 import MenuFilter from "./menuFilter/MenuFilter";
 import Searcher from "./Searcher";
 import type { IFetchStateData } from "../../interfaces/interfaces";
-import { ProductContext, QuantityContext, fetchContext } from "../../context/context";
+import { MaxContext, ProductContext, QuantityContext, fetchContext } from "../../context/context";
 
 
 export default function Filter() {
     const productQuantity = useContext(QuantityContext);
     const productState = useContext(ProductContext);
+    const maxCards = useContext(MaxContext);
 
     const {
         searchRestRequestVal,
@@ -16,7 +17,7 @@ export default function Filter() {
         menuFilterStateOptions,
         setMenuFilterStateOptions,
         timeSearchUpdateMs
-    } = FilterHook(productState!, productQuantity!);
+    } = FilterHook(productState!, productQuantity!, maxCards!);
 
     const filterHookData = useMemo<IFetchStateData>(() => ({
         searchRestRequestVal,

@@ -70,7 +70,7 @@ export function FilterItem(
                                     selectOpt.charAt(0).toLocaleUpperCase()
                                 )
                         }</span>
-                        <img src="/assets/images/arrow/arrow.svg" alt="arrow" />
+                        <img src="/images/arrow/arrow.svg" alt="arrow" />
                     </button>
                 </div>
 

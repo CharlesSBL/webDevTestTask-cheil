@@ -21,7 +21,7 @@ export default function Card(
 
     return (
         <li id={`card-${id}`} className='card-item'>
-            <img id={`img-${id}`} className='product-image' src={`/assets/images/washer/${washerImageUrl}`} alt={machineType} />
+            <img id={`img-${id}`} className='product-image' src={`/images/washer/${washerImageUrl}`} alt={machineType} />
             <div className='card-body'>
                 <h3 id={`prod-name-${id}`} className='product-name'>{productFullName}</h3>
 

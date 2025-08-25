@@ -1,0 +1,26 @@
+# Docker-specific files
+Dockerfile
+.dockerignore
+
+# Git folder
+.git
+.gitignore
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+.vercel
+
+# Environment variables
+.env
+.env.*
+
+# IDE and OS files
+.vscode
+.idea
+*.suo
+*.user
+*.log
+Thumbs.db
