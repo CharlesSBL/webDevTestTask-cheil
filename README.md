@@ -1,7 +1,7 @@
 # React + TypeScript + Vite
 
 
- implemented:  
+implemented features :  
     0. the dropbox is shuting down when mouse is clicked outside the box
     1. optimizing the search input typing requests: the request is send 250ms after last character is typed 
     2. input search work together with menu sorting options simultaneously
