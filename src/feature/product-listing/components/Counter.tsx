@@ -9,7 +9,7 @@ export default function Counter(
         <section className='container-out container-counter-out'>
             <div className='container-in container-counter-in'>
                 <div className='product-counter'>
-                    <p>Liczba wyników: {!productQuantity}</p>
+                    <p>Liczba wyników: {productQuantity?.productQuantity}</p>
                 </div>
             </div>
         </section>

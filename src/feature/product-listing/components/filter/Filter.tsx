@@ -3,18 +3,20 @@ import { FilterHook } from "../../hooks/FilterHook";
 import MenuFilter from "./menuFilter/MenuFilter";
 import Searcher from "./Searcher";
 import type { IFetchStateData } from "../../interfaces/interfaces";
-import { ProductContext, fetchContext } from "../../context/context";
+import { ProductContext, QuantityContext, fetchContext } from "../../context/context";
 
 
 export default function Filter() {
+    const productQuantity = useContext(QuantityContext);
     const productState = useContext(ProductContext);
+
     const {
         searchRestRequestVal,
         setSearchRestRequestVal,
         menuFilterStateOptions,
         setMenuFilterStateOptions,
         timeSearchUpdateMs
-    } = FilterHook(productState!);
+    } = FilterHook(productState!, productQuantity!);
 
     const filterHookData = useMemo<IFetchStateData>(() => ({
         searchRestRequestVal,

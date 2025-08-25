@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import type ProductDataTypes from "../types/ProductDataTypes";
-import type { IProductStateType, IFetchStateData } from "../interfaces/interfaces";
+import type { IProductStateType, IFetchStateData, IProductQuantity } from "../interfaces/interfaces";
 import { filterData } from "../functions/filterData";
 
 // TODO:
@@ -11,7 +11,8 @@ import { filterData } from "../functions/filterData";
 //  fix the price mapping to card 
 
 export function FilterHook(
-    productState: IProductStateType
+    productState: IProductStateType,
+    productQuantity: IProductQuantity
 ): IFetchStateData {
     const [menuFilterStateOptions, setMenuFilterStateOptions] = useState<string[]>([]);
     const [searchRestRequestVal, setSearchRestRequestVal] = useState<string>("");
@@ -40,34 +41,35 @@ export function FilterHook(
 
                             copyData1.sort((a, b) => b.popularity - a.popularity);
 
-                            productState.setProducts(
-                                filterData(copyData1, menuFilterStateOptions)
-                            );
+                            const filteredData1 = filterData(copyData1, menuFilterStateOptions)
+                            productQuantity.setProductQuantity(filteredData1.length)
+                            productState.setProducts(filteredData1);
                             break;
                         case "cena":
                             const copyData2 = data.slice();
 
                             copyData2.sort((a, b) => b.price - a.price);
 
-                            productState.setProducts(
-                                filterData(copyData2, menuFilterStateOptions)
-                            );
+                            const filteredData2 = filterData(copyData2, menuFilterStateOptions)
+                            productQuantity.setProductQuantity(filteredData2.length)
+                            productState.setProducts(filteredData2);
                             break;
                         case "pojemność":
                             const copyData3 = data.slice();
 
                             copyData3.sort((a, b) => b.capacity.amount - a.capacity.amount);
 
-                            productState.setProducts(
-                                filterData(copyData3, menuFilterStateOptions)
-                            );
+                            const filteredData3 = filterData(copyData3, menuFilterStateOptions)
+                            productQuantity.setProductQuantity(filteredData3.length)
+                            productState.setProducts(filteredData3);
                             break;
-
                         default:
+                            productQuantity.setProductQuantity(data.length)
                             productState.setProducts(data);
                             break;
                     }
                 } else {
+                    productQuantity.setProductQuantity(data.length)
                     productState.setProducts(data);
                 }
             })
